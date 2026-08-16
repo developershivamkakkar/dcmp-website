@@ -8,10 +8,7 @@
         Contact Us
     </a>
 
-    <!-- Floating Strip Right -->
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" href="{{ route('admissions.landing.get') }}">Enquire Now</a>
-    </div>
+    
 
     {{-- Page Hero Banner --}}
     <div class="page-hero">

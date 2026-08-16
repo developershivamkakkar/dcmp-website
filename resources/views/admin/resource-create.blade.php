@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Create Resource – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Upload and create new downloadable resources')
+@section('admin-keywords', 'create resource, upload, documents, admin')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

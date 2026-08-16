@@ -13,7 +13,7 @@
             <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
                 <div>
                     <h5 class="footer-cta-title mb-1">Ready to Join {{ config('site.name') }}?</h5>
-                    <p class="footer-cta-subtitle mb-0">Book a campus visit and experience the D-BELS difference.</p>
+                    <p class="footer-cta-subtitle mb-0">Book a campus visit and experience the DCMP difference.</p>
                 </div>
                 <div class="d-flex gap-2 flex-wrap justify-content-center">
                     <a href="{{ config('site.admissions_url') }}" target="_blank" rel="noopener noreferrer"
@@ -105,8 +105,9 @@
                 <h6 class="footer-heading">Quick Links</h6>
                 <ul class="footer-links">
                     <li><a href="{{ route('home.get') }}"><i class="fas fa-chevron-right"></i>Home</a></li>
-                    <li><a href="{{ url('/about/about-d-bels') }}"><i class="fas fa-chevron-right"></i>About {{ config('site.name') }}</a></li>
-                    <li><a href="{{ url('/about/mission-vision') }}"><i class="fas fa-chevron-right"></i>Mission &amp; Vision</a></li>
+                    <li><a href="{{ url('/about/into-the-sands-of-time') }}"><i class="fas fa-chevron-right"></i>About {{ config('site.name') }}</a></li>
+                    <li><a href="{{ url('/about/our-mission') }}"><i class="fas fa-chevron-right"></i>Our Mission</a></li>
+                    <li><a href="{{ url('/about/vision-dbs') }}"><i class="fas fa-chevron-right"></i>Vision DBS</a></li>
                     <li><a href="{{ url('/about/principal-message') }}"><i class="fas fa-chevron-right"></i>Principal's Message</a></li>
                     <li><a href="{{ url('/about/school-rules') }}"><i class="fas fa-chevron-right"></i>School Rules</a></li>
                     <li><a href="{{ url('/faq') }}"><i class="fas fa-chevron-right"></i>FAQs</a></li>
@@ -129,7 +130,8 @@
                 <h6 class="footer-heading">Academics</h6>
                 <ul class="footer-links">
                     <li><a href="{{ url('/academics/academic-overview') }}"><i class="fas fa-chevron-right"></i>Academic Overview</a></li>
-                    <li><a href="{{ url('/academics/academic-programmes') }}"><i class="fas fa-chevron-right"></i>Academic Programmes</a></li>
+                    <li><a href="{{ url('/academics/capacity-building-programs') }}"><i class="fas fa-chevron-right"></i>Capacity Building Programs</a></li>
+                    <li><a href="{{ url('/academics/enrollment-details') }}"><i class="fas fa-chevron-right"></i>Enrollment Details</a></li>
                     <li><a href="{{ route('resource-list') }}"><i class="fas fa-chevron-right"></i>Resource List</a></li>
                 </ul>
             </div>
@@ -141,8 +143,9 @@
                     <iframe
                         src="{{ config('site.maps_embed') }}"
                         width="100%" height="260" class="map-iframe"
+                        style="border:0;"
                         allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerpolicy="no-referrer-when-cross-origin"
                         title="{{ config('site.name') }} Location Map"></iframe>
                 </div>
                 <div class="footer-map-caption">

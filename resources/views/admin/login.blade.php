@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Login — DBELS</title>
+    <title>Admin Login � DBS</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ asset('admin_assets/assets/plugins/fontawesome-free/css/all.min.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/assets/dbs.ico') }}">
@@ -213,8 +213,8 @@
         <div class="login-card">
 
             <div class="logo-wrap">
-                <img src="{{ asset('storage/assets/dbs.png') }}" alt="DBELS Logo">
-                <h1>DBELS Admin</h1>
+                <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="DBELS Logo">
+                <h1>DBS Admin</h1>
                 <p>Sign in to your account</p>
             </div>
 
@@ -252,7 +252,7 @@
                     <div class="field-wrap">
                         <i class="fas fa-lock field-icon"></i>
                         <input type="password" id="password" name="password"
-                               placeholder="••••••••"
+                               placeholder="��������"
                                autocomplete="current-password">
                         <button type="button" class="toggle-pass" onclick="togglePassword()" aria-label="Toggle password visibility">
                             <i class="fas fa-eye" id="eye-icon"></i>

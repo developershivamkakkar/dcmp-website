@@ -1,4 +1,7 @@
 @extends('admin/layouts/app')
+@section('admin-title', 'Blogs – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Create and manage blog posts and articles')
+@section('admin-keywords', 'blogs, articles, posts, content, admin, management')
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

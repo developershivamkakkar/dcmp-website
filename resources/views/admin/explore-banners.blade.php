@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Explore Banners – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage explore section banners and promotional images')
+@section('admin-keywords', 'banners, explore, promotional, images, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

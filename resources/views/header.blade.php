@@ -1,8 +1,7 @@
 {{-- Announcements Section --}}
 <div class="container-fluid px-0">
     <div class="row g-0">
-        <div
-            class="col-lg-3 col-md-12 d-flex justify-content-center align-items-center text-center ann-bar-col">
+        <div class="col-lg-3 col-md-12 d-flex justify-content-center align-items-center text-center ann-bar-col">
             <div class="announcements"><i class="fas fa-bullhorn me-2"></i>ANNOUNCEMENTS:</div>
         </div>
         <div class="col-lg-7 col-md-12 d-flex align-items-center ann-bar-col">
@@ -139,6 +138,8 @@
                 @endif
             @endforeach
 
+
+
             {{-- Gallery Dropdown --}}
             <li class="nav-item dropdown desktop-dropdown">
                 <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
@@ -166,6 +167,9 @@
                         </a>
                     </li>
                 </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('contact') }}">Contact</a>
             </li>
         </ul>
     </div>
@@ -241,7 +245,8 @@
                 {{-- CTA --}}
                 <div class="mob-sidebar-cta">
                     <a href="{{ route('admissions.landing.get') }}" class="mob-cta-apply">Apply Now</a>
-                    <a href="{{ config('site.brochure_url') }}" class="mob-cta-brochure" target="_blank">Brochure</a>
+                    <a href="{{ config('site.brochure_url') }}" class="mob-cta-brochure"
+                        target="_blank">Brochure</a>
                 </div>
 
                 {{-- Social --}}
@@ -249,19 +254,24 @@
                     <span class="mob-social-label">Follow Us</span>
                     <div class="mob-social-icons">
                         @if (config('site.social.facebook'))
-                            <a href="{{ config('site.social.facebook') }}" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="{{ config('site.social.facebook') }}" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook-f"></i></a>
                         @endif
                         @if (config('site.social.instagram'))
-                            <a href="{{ config('site.social.instagram') }}" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="{{ config('site.social.instagram') }}" target="_blank"
+                                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         @endif
                         @if (config('site.social.youtube'))
-                            <a href="{{ config('site.social.youtube') }}" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="{{ config('site.social.youtube') }}" target="_blank" aria-label="YouTube"><i
+                                    class="fab fa-youtube"></i></a>
                         @endif
                         @if (config('site.social.twitter'))
-                            <a href="{{ config('site.social.twitter') }}" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
+                            <a href="{{ config('site.social.twitter') }}" target="_blank" aria-label="Twitter/X"><i
+                                    class="fab fa-twitter"></i></a>
                         @endif
                         @if (config('site.social.linkedin'))
-                            <a href="{{ config('site.social.linkedin') }}" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="{{ config('site.social.linkedin') }}" target="_blank" aria-label="LinkedIn"><i
+                                    class="fab fa-linkedin-in"></i></a>
                         @endif
                     </div>
                 </div>
@@ -299,7 +309,8 @@
                     @if ($child->children->isNotEmpty())
                         <div class="mob-nav-panel" data-panel="mob-sp-{{ $child->id }}">
                             <div class="mob-subpanel-head">
-                                <button class="mob-back-btn" data-pop><i class="fas fa-chevron-left"></i> Back</button>
+                                <button class="mob-back-btn" data-pop><i class="fas fa-chevron-left"></i>
+                                    Back</button>
                                 <span class="mob-subpanel-title">{{ $child->name }}</span>
                             </div>
                             <div class="mob-nav-scroll">
@@ -319,14 +330,19 @@
         <div class="mob-nav-panel" data-panel="mob-sp-gallery">
             <div class="mob-subpanel-head">
                 <button class="mob-back-btn" data-pop><i class="fas fa-chevron-left"></i> Back</button>
-                <span class="mob-subpanel-title"><i class="fas fa-images" style="margin-right:8px;"></i>Gallery</span>
+                <span class="mob-subpanel-title"><i class="fas fa-images"
+                        style="margin-right:8px;"></i>Gallery</span>
             </div>
             <div class="mob-nav-scroll">
                 <ul class="mob-subnav-list">
-                    <li><a href="{{ route('gallery-infrastructure.get') }}"><i class="fas fa-building me-2"></i>Infrastructure</a></li>
-                    <li><a href="{{ route('gallery-school-events.get') }}"><i class="fas fa-calendar-alt me-2"></i>Events &amp; Activities</a></li>
-                    <li><a href="{{ route('gallery-annual-functions.get') }}"><i class="fas fa-star me-2"></i>Annual Functions</a></li>
-                    <li><a href="{{ route('gallery-news-clippings.get') }}"><i class="fas fa-newspaper me-2"></i>News Clippings</a></li>
+                    <li><a href="{{ route('gallery-infrastructure.get') }}"><i
+                                class="fas fa-building me-2"></i>Infrastructure</a></li>
+                    <li><a href="{{ route('gallery-school-events.get') }}"><i
+                                class="fas fa-calendar-alt me-2"></i>Events &amp; Activities</a></li>
+                    <li><a href="{{ route('gallery-annual-functions.get') }}"><i class="fas fa-star me-2"></i>Annual
+                            Functions</a></li>
+                    <li><a href="{{ route('gallery-news-clippings.get') }}"><i class="fas fa-newspaper me-2"></i>News
+                            Clippings</a></li>
                 </ul>
             </div>
         </div>
@@ -335,15 +351,18 @@
         <div class="mob-nav-panel" data-panel="mob-sp-quicklinks">
             <div class="mob-subpanel-head">
                 <button class="mob-back-btn" data-pop><i class="fas fa-chevron-left"></i> Back</button>
-                <span class="mob-subpanel-title"><i class="fas fa-link" style="margin-right:8px;"></i>Quick Links</span>
+                <span class="mob-subpanel-title"><i class="fas fa-link" style="margin-right:8px;"></i>Quick
+                    Links</span>
             </div>
             <div class="mob-nav-scroll">
                 <ul class="mob-subnav-list">
                     <li><a href="{{ route('blogs.get') }}"><i class="fas fa-pen-nib me-2"></i>Blogs</a></li>
                     <li><a href="{{ route('events.get') }}"><i class="fas fa-calendar-alt me-2"></i>Events</a></li>
-                    <li><a href="{{ route('downloads-list.get') }}"><i class="fas fa-download me-2"></i>Downloads</a></li>
+                    <li><a href="{{ route('downloads-list.get') }}"><i class="fas fa-download me-2"></i>Downloads</a>
+                    </li>
                     <li><a href="{{ route('faq.get') }}"><i class="fas fa-question-circle me-2"></i>FAQs</a></li>
-                    <li><a href="{{ route('testimonials.get') }}"><i class="fas fa-comment-dots me-2"></i>Opinion That Matters</a></li>
+                    <li><a href="{{ route('testimonials.get') }}"><i class="fas fa-comment-dots me-2"></i>Opinion
+                            That Matters</a></li>
                     <li><a href="{{ route('job-form.get') }}"><i class="fas fa-briefcase me-2"></i>Careers</a></li>
                 </ul>
             </div>
@@ -371,66 +390,66 @@
 
 {{-- ── Mobile push-nav JS (no dependencies) ───────────────────────── --}}
 <script>
-(function () {
-    var container = document.querySelector('.mob-nav-panels-container');
-    if (!container) return;
+    (function() {
+        var container = document.querySelector('.mob-nav-panels-container');
+        if (!container) return;
 
-    var stack = ['mob-main'];
+        var stack = ['mob-main'];
 
-    function getPanel(id) {
-        return container.querySelector('[data-panel="' + id + '"]');
-    }
-
-    function activate(entering, leaving, direction) {
-        container.querySelectorAll('.mob-nav-panel').forEach(function (p) {
-            p.removeAttribute('data-active');
-            p.removeAttribute('data-prev');
-        });
-        if (leaving && direction === 'forward') {
-            leaving.setAttribute('data-prev', '');
+        function getPanel(id) {
+            return container.querySelector('[data-panel="' + id + '"]');
         }
-        if (entering) entering.setAttribute('data-active', '');
-    }
 
-    container.addEventListener('click', function (e) {
-        // Push forward
-        var pushBtn = e.target.closest('[data-push]');
-        if (pushBtn) {
-            var id       = pushBtn.dataset.push;
-            var entering = getPanel(id);
-            var leaving  = getPanel(stack[stack.length - 1]);
-            if (!entering) return;
-            stack.push(id);
-            activate(entering, leaving, 'forward');
-            return;
+        function activate(entering, leaving, direction) {
+            container.querySelectorAll('.mob-nav-panel').forEach(function(p) {
+                p.removeAttribute('data-active');
+                p.removeAttribute('data-prev');
+            });
+            if (leaving && direction === 'forward') {
+                leaving.setAttribute('data-prev', '');
+            }
+            if (entering) entering.setAttribute('data-active', '');
         }
-        // Pop back
-        var popBtn = e.target.closest('[data-pop]');
-        if (popBtn && stack.length > 1) {
-            var leavingId = stack.pop();
-            var leaving   = getPanel(leavingId);
-            var entering  = getPanel(stack[stack.length - 1]);
-            activate(entering, leaving, 'back');
-        }
-    });
 
-    // Reset to main panel when sidebar is closed
-    var toggle = document.getElementById('mob-menu-toggle');
-    if (toggle) {
-        toggle.addEventListener('change', function () {
-            if (!this.checked) {
-                var delay = 350; // match sidebar close transition
-                setTimeout(function () {
-                    stack = ['mob-main'];
-                    container.querySelectorAll('.mob-nav-panel').forEach(function (p) {
-                        p.removeAttribute('data-active');
-                        p.removeAttribute('data-prev');
-                    });
-                    var main = getPanel('mob-main');
-                    if (main) main.setAttribute('data-active', '');
-                }, delay);
+        container.addEventListener('click', function(e) {
+            // Push forward
+            var pushBtn = e.target.closest('[data-push]');
+            if (pushBtn) {
+                var id = pushBtn.dataset.push;
+                var entering = getPanel(id);
+                var leaving = getPanel(stack[stack.length - 1]);
+                if (!entering) return;
+                stack.push(id);
+                activate(entering, leaving, 'forward');
+                return;
+            }
+            // Pop back
+            var popBtn = e.target.closest('[data-pop]');
+            if (popBtn && stack.length > 1) {
+                var leavingId = stack.pop();
+                var leaving = getPanel(leavingId);
+                var entering = getPanel(stack[stack.length - 1]);
+                activate(entering, leaving, 'back');
             }
         });
-    }
-}());
+
+        // Reset to main panel when sidebar is closed
+        var toggle = document.getElementById('mob-menu-toggle');
+        if (toggle) {
+            toggle.addEventListener('change', function() {
+                if (!this.checked) {
+                    var delay = 350; // match sidebar close transition
+                    setTimeout(function() {
+                        stack = ['mob-main'];
+                        container.querySelectorAll('.mob-nav-panel').forEach(function(p) {
+                            p.removeAttribute('data-active');
+                            p.removeAttribute('data-prev');
+                        });
+                        var main = getPanel('mob-main');
+                        if (main) main.setAttribute('data-active', '');
+                    }, delay);
+                }
+            });
+        }
+    }());
 </script>

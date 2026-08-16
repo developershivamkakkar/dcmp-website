@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Announcements – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Create and manage school announcements and notices')
+@section('admin-keywords', 'announcements, notices, updates, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

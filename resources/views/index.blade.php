@@ -1,19 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Dbels- Best School in Panchkula & Tricity Chandigarh')
+@section('title', 'DCM Presidency School (DCMP) - Best School in Ludhiana')
 
 @section('meta-description',
-    'Dass & Brown Experiential Learning School (Dbels), the best school in Panchkula and
-    Chandigarh')
+    '')
 
 
 @section('meta-keywords',
-    'Dbels, Dass and Brown School, Best School in Panchkula, Best School in Chandigarh, Top
-    Schools in Panchkula, Top Schools in Chandigarh, Best ICSE School Panchkula, Best ICSE School Chandigarh, Best Cambridge
-    School Panchkula, Cambridge Schools Chandigarh, International Schools Panchkula, International Schools Chandigarh, Best
-    K-12 School Panchkula, Finnish Model School Panchkula, , Experiential Learning School, Global Curriculum Schools, Early
-    Education Panchkula, Private Schools in Panchkula, English Medium School Panchkula, Dbels Panchkula, Dbels Chandigarh,
-    Dass & Brown Experiential Learning School')
+    'DCM Presidency School, DCMP, Best School in Ludhiana, Top School in Ludhiana, CBSE School in Ludhiana, Cambridge International School in Ludhiana, Experiential Learning School, Future-Ready Learning, Innovative Education, Holistic Development, Advanced Labs and Facilities, Award-Winning School, Global Exposure for Students')
 
 @section('content')
 
@@ -53,18 +47,8 @@
         </div>
     @endif
 
-    <!-- Floating Strip Right Bottom -->
-    <div class="floating-strip-right-bottom">
-        <!-- Open Modal -->
-        <a href="/brochure" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#brochureModal"
-            onclick="event.preventDefault();">
-            Download Brochure
-        </a>
-    </div>
-    <!-- Floating Strip Right -->
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" target="_blank" href="https://admissions.dassandbrownschool.com/">Register Now</a>
-    </div>
+
+
 
     <!--Floating Strip Left-->
     <!--<div class="floating-left-strip">-->
@@ -118,7 +102,7 @@
     <!--                <form method="POST" action="{{ route('contact.store') }}" enctype="multipart/form-data">-->
     <!--                    @csrf-->
     <!--                    <div class="text-center">-->
-    <!--                        <img class="rounded" src="{{ asset('storage/assets/dbs.png') }}" alt="dbels-logo"-->
+    <!--                        <img class="rounded" src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dbels-logo"-->
     <!--                            style="width:100px;height:100px; background-color:#ffffff00; object-fit:contain;">-->
     <!--                    </div>-->
     <!--                    <div class="mb-2 mt-1">-->
@@ -218,7 +202,7 @@
                 <div class="col-lg-7 text-white" data-aos="fade-right">
                     <span class="adm-badge"><i class="fas fa-star me-1"></i> Admissions Open 2026–27</span>
                     <h2 class="adm-title mt-3">Give Your Child the Education They Deserve</h2>
-                    <p class="adm-subtitle">Dass &amp; Brown Experiential Learning School is now accepting applications. Secure your child's future with world-class, future-ready learning.</p>
+                    <p class="adm-subtitle">DCM Presidency School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
 
                     <div class="d-flex flex-wrap gap-3 mt-4">
                         <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7">
@@ -234,12 +218,12 @@
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="150">
                     <div class="adm-stats-grid">
                         <div class="adm-stat">
-                            <span class="adm-stat-num">36<span class="adm-stat-plus">+</span></span>
+                            <span class="adm-stat-num">50<span class="adm-stat-plus">+</span></span>
                             <span class="adm-stat-label">National Awards &amp; Prestigious Recognitions</span>
                         </div>
                         <div class="adm-stat">
                             <i class="fas fa-graduation-cap adm-stat-icon"></i>
-                            <span class="adm-stat-label">CBSE &amp; Cambridge International Curricula</span>
+                            <span class="adm-stat-label">CBSE Curriculum</span>
                         </div>
                         <div class="adm-stat">
                             <i class="fab fa-microsoft adm-stat-icon"></i>
@@ -250,7 +234,7 @@
                             <span class="adm-stat-label">Advanced AI, Robotics &amp; STEAM Innovation Labs</span>
                         </div>
                         <div class="adm-stat">
-                            <span class="adm-stat-num">1000<span class="adm-stat-plus">+</span></span>
+                            <span class="adm-stat-num">2000<span class="adm-stat-plus">+</span></span>
                             <span class="adm-stat-label">Young Leaders Inspired &amp; Empowered</span>
                         </div>
                         <div class="adm-stat">
@@ -272,12 +256,12 @@
                     <div class="row">
                         <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
                             <img loading="lazy" class="pb-md-4 pb-sm-4 pb-4 explore-logo"
-                                src="{{ asset('storage/assets/dbs.webp') }}" alt="dbels-logo">
+                                src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dcmp-logo">
                         </div>
                         <div class="col-9 col-sm-9 col-md-9 col-lg-9" data-aos="fade-up" data-aos-delay="400">
                             <h2 class="explore-potential-heading mb-4">
-                                SHAPING FUTURE LEADERS THROUGH
-                                <span class="fw-bold explore-text">INNOVATION & TECHNOLOGY</span>
+                                DIGITALLY NETWORKED SMART SCHOOL
+                                <span class="fw-bold explore-text">WITH CUTTING EDGE TECHNOLOGY</span>
                             </h2>
                         </div>
                     </div>
@@ -336,7 +320,7 @@
             <div class="row text-center mb-5">
                 <div class="col">
                     <span class="hlt-eyebrow">Quick Access</span>
-                    <h2 class="section-title mt-2">Explore More with Dbels</h2>
+                    <h2 class="section-title mt-2">Explore More with DCMP</h2>
                     <p class="text-light opacity-75">Everything you need, just a click away</p>
                 </div>
             </div>
@@ -346,7 +330,7 @@
                         <div class="hlt-card-top-bar"></div>
                         <div class="hlt-card-body">
                             <div class="hlt-card-icon-wrap">
-                                <img src="{{ asset('storage/assets/admissions.png') }}" alt="admissions" loading="lazy">
+                                <img src="{{ asset('storage/assets/facilities-images/admission-enquiry.png') }}" alt="admissions" loading="lazy">
                             </div>
                             <h3 class="hlt-card-title">Admission Enquiry</h3>
                             <p class="hlt-card-desc">Begin your child's journey. Apply now for the 2026–27 academic year.</p>
@@ -359,7 +343,7 @@
                         <div class="hlt-card-top-bar"></div>
                         <div class="hlt-card-body">
                             <div class="hlt-card-icon-wrap">
-                                <img src="{{ asset('storage/assets/blog.png') }}" alt="blog" loading="lazy">
+                                <img src="{{ asset('storage/assets/facilities-images/blogs.png') }}" alt="blog" loading="lazy">
                             </div>
                             <h3 class="hlt-card-title">Blogs</h3>
                             <p class="hlt-card-desc">Insights, stories and the latest news from the DBS community.</p>
@@ -372,7 +356,7 @@
                         <div class="hlt-card-top-bar"></div>
                         <div class="hlt-card-body">
                             <div class="hlt-card-icon-wrap">
-                                <img src="{{ asset('storage/assets/career-path.png') }}" alt="career" loading="lazy">
+                                <img src="{{ asset('storage/assets/facilities-images/careers.png') }}" alt="career" loading="lazy">
                             </div>
                             <h3 class="hlt-card-title">Careers</h3>
                             <p class="hlt-card-desc">Join our team of passionate educators, innovators and changemakers.</p>
@@ -385,7 +369,7 @@
                         <div class="hlt-card-top-bar"></div>
                         <div class="hlt-card-body">
                             <div class="hlt-card-icon-wrap">
-                                <img src="{{ asset('storage/assets/phone.png') }}" alt="contact" loading="lazy">
+                                <img src="{{ asset('storage/assets/facilities-images/contact.png') }}" alt="contact" loading="lazy">
                             </div>
                             <h3 class="hlt-card-title">Contact Us</h3>
                             <p class="hlt-card-desc">Have a question? We're here to help and guide you every step of the way.</p>
@@ -419,7 +403,7 @@
 
                         <div class="d-flex" data-aos="fade-right">
                             <i class="fas fa-book-open text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Dual Curriculum Advantage – CBSE & Cambridge (CAIE)</p>
+                            <p class="mb-0 text-muted">CBSE NEP experiential learning compliant school</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="100">
@@ -457,7 +441,7 @@
 
                 <!-- CENTER IMAGE -->
                 <div class="col-12 col-lg-4 d-flex justify-content-center">
-                    <img src="{{ asset('storage/assets/teddy_1.webp') }}" alt="Student Learning"
+                    <img src="{{ asset('storage/assets/child.png') }}" alt="Student Learning"
                         class="img-fluid sets-apart-img" data-aos="zoom-in">
                 </div>
 
@@ -467,12 +451,12 @@
 
                         <div class="d-flex" data-aos="fade-left">
                             <i class="fas fa-rocket text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">International Exposure through NASA, MIT, Harvard & Global Programs</p>
+                            <p class="mb-0 text-muted">International Exposure through tie-ups with Universities Abroad</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="100">
                             <i class="fas fa-swimming-pool text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Elite Sports Facilities including Habitat Centre & Swimming Pool</p>
+                            <p class="mb-0 text-muted">Elite Sport Facilities including outdoor and indoor arenas</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="200">
@@ -487,7 +471,7 @@
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="400">
                             <i class="fas fa-compass text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Career Guidance & Study Abroad Support from Middle School</p>
+                            <p class="mb-0 text-muted">Career Guidance & Study Abroad Support from Middle School onwards</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="500">
@@ -559,7 +543,7 @@
             {{-- Section header --}}
             <div class="text-center mb-5">
                 <span class="hlt-eyebrow" data-aos="fade-down">World-Class Infrastructure</span>
-                <h2 class="cool-heading mt-2" data-aos="zoom-in">Facilities @ DBS</h2>
+                <h2 class="cool-heading mt-2" data-aos="zoom-in">Facilities @ DCMP</h2>
                 <p class="fac-section-desc text-muted mt-3 mx-auto" data-aos="fade-up" data-aos-delay="100">
                     A masterpiece of modern design — centrally air-conditioned, Wi-Fi enabled and fully digitally
                     equipped with cutting-edge science, innovation labs and elite sports facilities.
@@ -569,21 +553,21 @@
             {{-- Facility tiles --}}
             @php
                 $facilities = [
-                    ['src' => 'AI INNOVATION hub.png',               'alt' => 'AI Innovation Hub'],
-                    ['src' => 'ATL & ROBOTICS Labs.png',             'alt' => 'ATL & Robotics Labs'],
-                    ['src' => 'Advance Laboratories.png',            'alt' => 'Advance Laboratories'],
-                    ['src' => 'Smart Classrooms.png',                'alt' => 'Smart Classrooms'],
-                    ['src' => 'SMART DIGITAL Board.png',             'alt' => 'Smart Digital Board'],
-                    ['src' => 'HI-TECH Campus.png',                  'alt' => 'Hi-Tech Campus'],
-                    ['src' => 'HABITAT centre.png',                  'alt' => 'Habitat Centre'],
-                    ['src' => 'SWIMMING pool.png',                   'alt' => 'Swimming Pool'],
-                    ['src' => 'MILKHA SINGH stadium.png',            'alt' => 'Milkha Singh Stadium'],
-                    ['src' => 'ASTROTURF courts.png',                'alt' => 'Astroturf Courts'],
-                    ['src' => 'INDOOR SPORTS arena.png',             'alt' => 'Indoor Sports Arena'],
-                    ['src' => 'RIFLE SHOOTING range.png',            'alt' => 'Rifle Shooting Range'],
-                    ['src' => 'OPEN AIR theatre.png',                'alt' => 'Open Air Theatre'],
-                    ['src' => 'WELLNESS &  counselling session.png', 'alt' => 'Wellness & Counselling'],
-                    ['src' => '24×7 CCTV security.png',              'alt' => '24×7 CCTV Security'],
+                    ['src' => 'AI AND IT LAB ICON.png',               'alt' => 'AI Innovation Hub'],
+                    ['src' => 'alt and robotic icon.png',            'alt' => 'ATL & Robotics Labs'],
+                    ['src' => 'adv lab icon.png',                    'alt' => 'Advance Laboratories'],
+                    ['src' => 'smart classes.png',                   'alt' => 'Smart Classrooms'],
+                    ['src' => 'hi tech math lab icon.png',           'alt' => 'Smart Digital Board'],
+                    ['src' => 'Hi Tech Campus Icon.png',             'alt' => 'Hi-Tech Campus'],
+                    ['src' => 'lrc icon.png',                        'alt' => 'Habitat Centre'],
+                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Swimming Pool'],
+                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Milkha Singh Stadium'],
+                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Astroturf Courts'],
+                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Indoor Sports Arena'],
+                    ['src' => 'ncc icon.png',                        'alt' => 'Rifle Shooting Range'],
+                    ['src' => 'auditorium icon.png',                 'alt' => 'Open Air Theatre'],
+                    ['src' => 'care centre icon.png',                'alt' => 'Wellness & Counselling'],
+                    ['src' => '24x7 cctv icon.png',                  'alt' => '24×7 CCTV Security'],
                 ];
             @endphp
             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center">
@@ -593,8 +577,10 @@
                             <div class="fac-tile-img-wrap">
                                 <img loading="lazy"
                                     src="{{ asset('storage/assets/facilities-images/' . rawurlencode($facility['src'])) }}"
-                                    alt="{{ $facility['alt'] }}">
+                                    alt="{{ $facility['alt'] }}"
+                                    onerror="this.style.display='none'">
                             </div>
+                            <p class="fac-tile-label mb-0 fw-500" style="font-size: 0.85rem; color: #333;">{{ $facility['alt'] }}</p>
                         </div>
                     </div>
                 @endforeach
@@ -739,7 +725,7 @@
     <div class="modal fade" id="hpReadMoreModal" tabindex="-1" aria-labelledby="hpReadMoreModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
             <div class="modal-content border-0 shadow-lg" style="border-radius:16px;overflow:hidden;">
-                <div class="modal-header border-0" style="background:var(--color-primary,#8c0305);padding:16px 20px;">
+                <div class="modal-header border-0" style="background:var(--color-primary,#052A56);padding:16px 20px;">
                     <div id="hp-rm-stars" style="display:flex;gap:4px;align-items:center;"></div>
                     <button type="button" class="btn-close btn-close-white" style="margin-left:auto;" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -757,6 +743,74 @@
             </div>
         </div>
     </div>
+    @endif
+
+    {{-- ── Learning Partners Section ──────────────────────────── --}}
+    @if ($learningPartners->isNotEmpty())
+    <section class="learning-partners-section py-5 bg-light">
+        <div class="container">
+
+            {{-- Header --}}
+            <div class="learning-partners-header" data-aos="fade-up" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+                <div>
+                    <span class="section-label" style="color: #0C54A0; font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Our Collaborators</span>
+                    <h2 class="section-title" style="font-size: 2.5rem; font-weight: 700; color: #1a1a1a; margin-top: 0.5rem;">Learning Partners</h2>
+                </div>
+                <a href="{{ route('learning-partners.get') }}" class="btn" style="white-space: nowrap; background: var(--color-primary, #052A56); color: white; border: none; padding: 0.5rem 1.5rem; border-radius: 6px; font-weight: 600; transition: all 0.3s ease;">
+                    View All &rarr;
+                </a>
+            </div>
+
+            {{-- Partners Grid --}}
+            <div class="learning-partners-grid">
+                <div class="row g-4">
+                    @foreach ($learningPartners as $partner)
+                        <div class="col-md-6 col-lg-4">
+                            <div class="partner-card h-100" style="border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+                                <div class="partner-logo-wrapper bg-light d-flex align-items-center justify-content-center" style="height: 200px; padding: 1.5rem; background: #f8f9fa;">
+                                    @if($partner->logo_path)
+                                        @if($partner->website_url)
+                                            <a href="{{ $partner->website_url }}" target="_blank" rel="noopener noreferrer"
+                                               class="text-decoration-none" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;">
+                                                <img src="{{ Storage::url($partner->logo_path) }}"
+                                                     alt="{{ $partner->name }}"
+                                                     class="img-fluid"
+                                                     style="max-height: 160px; max-width: 100%; object-fit: contain;">
+                                            </a>
+                                        @else
+                                            <img src="{{ Storage::url($partner->logo_path) }}"
+                                                 alt="{{ $partner->name }}"
+                                                 class="img-fluid"
+                                                 style="max-height: 160px; max-width: 100%; object-fit: contain;">
+                                        @endif
+                                    @else
+                                        <span class="text-muted" style="font-weight: 500;">{{ $partner->name }}</span>
+                                    @endif
+                                </div>
+
+                                <div class="partner-info" style="padding: 1.5rem;">
+                                    <h5 class="partner-name" style="font-size: 1.1rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.75rem;">{{ $partner->name }}</h5>
+                                    @if($partner->description)
+                                        <p class="partner-description text-muted" style="font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">
+                                            {{ Str::limit($partner->description, 100) }}
+                                        </p>
+                                    @endif
+
+                                    @if($partner->website_url)
+                                        <a href="{{ $partner->website_url }}" target="_blank" rel="noopener noreferrer"
+                                           class="btn btn-sm btn-outline-primary" style="border-radius: 6px;">
+                                            Learn More <i class="fas fa-external-link-alt ms-2" style="font-size: 0.75rem;"></i>
+                                        </a>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+        </div>
+    </section>
     @endif
 
     <x-brochure-modal />
@@ -785,8 +839,7 @@
         font-weight: 700;
         letter-spacing: .1em;
         text-transform: uppercase;
-        color: var(--color-primary, #8c0305);
-        margin-bottom: 6px;
+        color: var(--color-primary, #052A56);
     }
     .hp-opinions-title {
         font-family: 'Playfair Display', serif;
@@ -802,22 +855,21 @@
         position: absolute;
         bottom: 0; left: 0;
         width: 48px; height: 3px;
-        background: var(--color-primary, #8c0305);
-        border-radius: 2px;
+        background: var(--color-primary, #052A56);
     }
     .hp-opinions-view-all {
         font-size: .85rem;
         font-weight: 600;
-        color: var(--color-primary, #8c0305);
+        color: var(--color-primary, #052A56);
         text-decoration: none;
-        border: 1.5px solid var(--color-primary, #8c0305);
+        border: 1.5px solid var(--color-primary, #052A56);
         border-radius: 50px;
         padding: 6px 18px;
         transition: background .2s, color .2s;
         white-space: nowrap;
     }
     .hp-opinions-view-all:hover {
-        background: var(--color-primary, #8c0305);
+        background: var(--color-primary, #052A56);
         color: #fff;
     }
 
@@ -841,7 +893,7 @@
     }
     .hp-opinion-card:hover {
         transform: translateY(-4px);
-        box-shadow: 0 12px 32px rgba(140,3,5,.1);
+        box-shadow: 0 12px 32px rgba(5,42,86,.1);
     }
     .hp-opinion-card::before {
         content: '\201C';
@@ -849,7 +901,7 @@
         top: 12px; right: 18px;
         font-size: 5rem;
         line-height: 1;
-        color: var(--color-primary, #8c0305);
+        color: var(--color-primary, #052A56);
         opacity: .07;
         font-family: Georgia, serif;
         pointer-events: none;
@@ -877,10 +929,10 @@
         align-items: center;
         gap: 6px;
         padding: 4px 14px;
-        border: 1.5px solid var(--color-primary, #8c0305);
+        border: 1.5px solid var(--color-primary, #052A56);
         border-radius: 50px;
         background: transparent;
-        color: var(--color-primary, #8c0305);
+        color: var(--color-primary, #052A56);
         font-size: .78rem;
         font-weight: 600;
         letter-spacing: .02em;
@@ -888,7 +940,7 @@
         transition: background .2s, color .2s;
     }
     .hp-view-full-btn:hover {
-        background: var(--color-primary, #8c0305);
+        background: var(--color-primary, #052A56);
         color: #fff;
     }
 
@@ -923,6 +975,18 @@
         object-fit: cover;
         flex-shrink: 0;
     }
+
+    /* Learning Partners View All Button */
+    .learning-partners-header a {
+        transition: all 0.3s ease;
+    }
+
+    .learning-partners-header a:hover {
+        background: var(--color-primary, #052A56) !important;
+        color: white !important;
+        box-shadow: 0 4px 12px rgba(5, 42, 86, 0.3);
+        transform: translateY(-2px);
+    }
 </style>
 @endsection
 
@@ -935,7 +999,7 @@
         var date        = btn.dataset.date || '';
         var rating      = parseInt(btn.dataset.rating) || 0;
         var photo       = btn.dataset.photo || '';
-        var gradient    = btn.dataset.gradient || '#8c0305';
+        var gradient    = btn.dataset.gradient || '#052A56';
         var initial     = btn.dataset.initial || '?';
 
         // Stars

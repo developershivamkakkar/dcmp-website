@@ -1,4 +1,7 @@
 @extends('admin/layouts/app')
+@section('admin-title', 'Events – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Create and manage school events and calendar')
+@section('admin-keywords', 'events, calendar, activities, admin, management')
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

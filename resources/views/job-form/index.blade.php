@@ -8,7 +8,7 @@
 /* ── Hero ──────────────────────────────────────────────────────────── */
 .careers-hero {
     position: relative;
-    background: linear-gradient(135deg, var(--color-primary, #8c0305) 0%, #3d0102 60%, #5a0204 100%);
+    background: linear-gradient(135deg, var(--color-primary, #052A56) 0%, #031D3D 60%, #00A859 100%);
     padding: 80px 0 100px;
     text-align: center;
     color: #fff;
@@ -66,7 +66,7 @@
     margin-right: 6px;
 }
 .careers-breadcrumb ol li a {
-    color: var(--color-primary, #8c0305);
+    color: var(--color-primary, #052A56);
     text-decoration: none;
     font-weight: 500;
 }
@@ -92,11 +92,11 @@
 .careers-info-card .info-icon-box {
     width: 56px; height: 56px;
     border-radius: 14px;
-    background: rgba(140,3,5,.08);
+    background: rgba(5,42,86,.08);
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 20px;
 }
-.careers-info-card .info-icon-box i { font-size: 24px; color: var(--color-primary, #8c0305); }
+.careers-info-card .info-icon-box i { font-size: 24px; color: var(--color-primary, #052A56); }
 .careers-info-card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.35rem; font-weight: 700;
@@ -111,15 +111,15 @@
     border-bottom: 1px solid #f2f2f2;
 }
 .careers-perks li:last-child { border-bottom: none; }
-.careers-perks li i { color: var(--color-primary, #8c0305); font-size: .9rem; margin-top: 2px; flex-shrink: 0; }
+.careers-perks li i { color: var(--color-primary, #052A56); font-size: .9rem; margin-top: 2px; flex-shrink: 0; }
 .careers-contact-note {
     background: linear-gradient(135deg, rgba(140,3,5,.06), rgba(140,3,5,.03));
-    border-left: 3px solid var(--color-primary, #8c0305);
+    border-left: 3px solid var(--color-primary, #052A56);
     border-radius: 0 10px 10px 0;
     padding: 14px 16px;
     font-size: .83rem; color: #555;
 }
-.careers-contact-note a { color: var(--color-primary, #8c0305); font-weight: 600; text-decoration: none; }
+.careers-contact-note a { color: var(--color-primary, #052A56); font-weight: 600; text-decoration: none; }
 
 /* ── Form card ─────────────────────────────────────────────────────── */
 .careers-form-card {
@@ -130,7 +130,7 @@
     overflow: hidden;
 }
 .careers-form-header {
-    background: linear-gradient(135deg, var(--color-primary, #8c0305) 0%, #5a0204 100%);
+    background: linear-gradient(135deg, var(--color-primary, #052A56) 0%, #00A859 100%);
     padding: 28px 32px; color: #fff;
 }
 .careers-form-header h2 {
@@ -143,7 +143,7 @@
 
 /* ── Form fields ───────────────────────────────────────────────────── */
 .cf-label { font-size: .83rem; font-weight: 600; color: #444; margin-bottom: 6px; display: block; }
-.cf-label span.req { color: var(--color-primary, #8c0305); margin-left: 2px; }
+.cf-label span.req { color: var(--color-primary, #052A56); margin-left: 2px; }
 .cf-input {
     width: 100%;
     padding: 11px 14px;
@@ -157,8 +157,8 @@
 }
 .cf-input:focus {
     outline: none;
-    border-color: var(--color-primary, #8c0305);
-    box-shadow: 0 0 0 3px rgba(140,3,5,.1);
+    border-color: var(--color-primary, #052A56);
+    box-shadow: 0 0 0 3px rgba(5,42,86,.1);
     background: #fff;
 }
 .cf-input::placeholder { color: #b0b0b0; font-size: .88rem; }
@@ -168,22 +168,22 @@
 .cf-section-title {
     font-size: .75rem; font-weight: 700;
     text-transform: uppercase; letter-spacing: 1px;
-    color: var(--color-primary, #8c0305);
+    color: var(--color-primary, #052A56);
     padding-bottom: 8px;
-    border-bottom: 2px solid rgba(140,3,5,.12);
+    border-bottom: 2px solid rgba(5,42,86,.12);
     margin-bottom: 20px;
 }
 .cf-divider { border: none; border-top: 1px solid #f0f0f0; margin: 28px 0; }
 .cf-submit-btn {
-    background: linear-gradient(135deg, var(--color-primary, #8c0305) 0%, #5a0204 100%);
+    background: linear-gradient(135deg, var(--color-primary, #052A56) 0%, #00A859 100%);
     color: #fff; border: none; border-radius: 10px;
     padding: 14px 40px; font-size: 1rem; font-weight: 600;
     font-family: 'Poppins', sans-serif; cursor: pointer;
     transition: opacity .2s, transform .15s, box-shadow .2s;
-    box-shadow: 0 4px 16px rgba(140,3,5,.28);
+    box-shadow: 0 4px 16px rgba(5,42,86,.28);
     display: inline-flex; align-items: center; gap: 10px;
 }
-.cf-submit-btn:hover { opacity: .9; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(140,3,5,.35); }
+.cf-submit-btn:hover { opacity: .9; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(5,42,86,.35); }
 .cf-submit-btn:active { transform: translateY(0); }
 .careers-success-alert {
     border: none; border-radius: 12px;
@@ -252,7 +252,7 @@
                         <li><i class="fas fa-check-circle"></i> Supportive leadership team</li>
                     </ul>
                     <div class="careers-contact-note">
-                        <i class="fas fa-info-circle me-2" style="color:var(--color-primary,#8c0305);"></i>
+                        <i class="fas fa-info-circle me-2" style="color:var(--color-primary,#052A56);"></i>
                         Questions? Email
                         <a href="mailto:{{ config('site.email_info') }}">{{ config('site.email_info') }}</a>
                         or call <a href="tel:{{ preg_replace('/[^0-9+]/', '', config('site.phone')) }}">{{ config('site.phone') }}</a>.

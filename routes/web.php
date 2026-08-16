@@ -8,11 +8,13 @@ use App\Http\Controllers\admin\GalleryController;
 use App\Http\Controllers\admin\HeroBannerController;
 use App\Http\Controllers\admin\MandatoryDisclosureController;
 use App\Http\Controllers\admin\ResourceController;
+use App\Http\Controllers\admin\LearningPartnerController;
 use App\Http\Controllers\FrontendContactContoller;
 use App\Http\Controllers\FrontendGalleryController;
 use App\Http\Controllers\FrontendHomePageController;
 use App\Http\Controllers\FrontendJobController;
 use App\Http\Controllers\FrontendResourceController;
+use App\Http\Controllers\FrontendLearningPartnerController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AnnouncementsController;
 use App\Http\Controllers\admin\BlogController;
@@ -77,6 +79,9 @@ Route::middleware(['loadAnnouncements'])->group(function () {
     // Testimonials (Opinions That Matter) Routes
     Route::get('opinions-that-matter', [FrontendTestimonialController::class, 'index'])->name('testimonials.get');
 
+    // Learning Partners Routes
+    Route::get('learning-partners', [FrontendLearningPartnerController::class, 'index'])->name('learning-partners.get');
+
     // Transfer Certificate Routes
     Route::get('transfer-certificate', [FrontendTransferCertificateController::class, 'index'])->name('tc.index');
     Route::post('transfer-certificate/search', [FrontendTransferCertificateController::class, 'search'])->name('tc.search');
@@ -96,14 +101,14 @@ Route::middleware(['loadAnnouncements'])->group(function () {
     Route::post('/brochure-submit', [FrontendBrochureController::class, 'submit'])
         ->name('brochure.submit');
 
+        // Job Enquiry Form
+        Route::get('job-enquiry', [FrontendJobController::class, 'index'])->name('job-form.get');
+        Route::post('job-enquiry', [FrontendJobController::class, 'store'])->name('job.store');
 
     // Admissions Landing WebPage
     Route::get('admissions', [FrontendPageController::class, 'admissions_landing_page'])->name('admissions.landing.get');
 
 
-        // Job Enquiry Form
-        Route::get('job-enquiry', [FrontendJobController::class, 'index'])->name('job-form.get');
-        Route::post('job-enquiry', [FrontendJobController::class, 'store'])->name('job.store');
 });
 
 
@@ -230,6 +235,13 @@ Route::group(['prefix' => 'admin'], function () {
         Route::post('testimonials', [TestimonialController::class, 'store'])->name('admin.testimonials.store');
         Route::put('testimonials/{id}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
         Route::delete('testimonials/{id}', [TestimonialController::class, 'delete'])->name('admin.testimonials.delete');
+
+        // Learning Partners Admin Routes
+        Route::get('learning-partners', [LearningPartnerController::class, 'index'])->name('admin.learning-partners.index');
+        Route::post('learning-partners', [LearningPartnerController::class, 'store'])->name('admin.learning-partners.store');
+        Route::put('learning-partners/{partner}', [LearningPartnerController::class, 'update'])->name('admin.learning-partners.update');
+        Route::delete('learning-partners/{partner}', [LearningPartnerController::class, 'destroy'])->name('admin.learning-partners.destroy');
+        Route::post('learning-partners/reorder', [LearningPartnerController::class, 'reorder'])->name('admin.learning-partners.reorder');
 
         // FAQ Admin Routes
         Route::get('faqs', [FaqController::class, 'index'])->name('admin.faqs.index');

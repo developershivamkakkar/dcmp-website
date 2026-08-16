@@ -31,6 +31,7 @@ class SuperAdminSeeder extends Seeder
 
         // Define the permissions with the guard name
         $permissions = [
+            // Access Control Permissions
             'view permissions',
             'create permission',
             'delete permission',
@@ -44,15 +45,26 @@ class SuperAdminSeeder extends Seeder
             'delete user',
             'create user',
             'update user',
+            // Module Permissions
             'module-announcements',
-            'module-explore-banners',
+            'module-achievements',
+            'module-blogs',
+            'module-downloads',
             'module-enquires',
+            'module-events',
+            'module-explore-banners',
+            'module-faqs',
             'module-gallery',
             'module-hero-banners',
+            'module-landing-page',
             'module-mandatory-disclosure',
-            'module-page-editor',
-            'module-resource-list',
             'module-manage-menu-items',
+            'module-page-editor',
+            'module-popups',
+            'module-resource-list',
+            'module-site-settings',
+            'module-testimonials',
+            'module-transfer-certificates',
         ];
 
         // Create permissions if they don't exist and assign them to the role

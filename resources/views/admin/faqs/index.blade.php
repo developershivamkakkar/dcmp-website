@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'FAQs – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Create and manage frequently asked questions')
+@section('admin-keywords', 'faqs, questions, answers, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

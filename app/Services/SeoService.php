@@ -116,15 +116,15 @@ class SeoService
      * Populate SEO from a dynamic CMS page (PageContent).
      * Call in FrontendPageController::show().
      */
-    public function fromPage(string $title, string $content = ''): static
+    public function fromPage(PageContent $page): static
     {
         $siteName  = config('site.name');
-        $plainText = strip_tags($content);
+        $plainText = strip_tags($page->content ?? '');
 
         return $this
-            ->set('title',       $title . ' — ' . $siteName)
-            ->set('description', Str::limit($plainText, 160) ?: config('site.meta_description'))
-            ->set('keywords',    config('site.meta_keywords'))
+            ->set('title',       ($page->meta_title ?? $page->title) . ' — ' . $siteName)
+            ->set('description', $page->meta_description ?: (Str::limit($plainText, 160) ?: config('site.meta_description')))
+            ->set('keywords',    $page->meta_keywords ?: config('site.meta_keywords'))
             ->set('og_type',     'article')
             ->set('canonical',   url()->current());
     }

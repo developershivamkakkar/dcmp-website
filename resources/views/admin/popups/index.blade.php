@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Popups – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage website popups and notifications')
+@section('admin-keywords', 'popups, notifications, modals, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

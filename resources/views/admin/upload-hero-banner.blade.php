@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Upload Hero Banner – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Upload new hero banners for the homepage')
+@section('admin-keywords', 'upload banner, hero images, admin')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

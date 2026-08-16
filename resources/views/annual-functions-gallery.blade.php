@@ -11,9 +11,7 @@
         class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i> Contact Us
     </a>
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" target="_blank" href="https://admissions.dassandbrownschool.com/">Register Now</a>
-    </div>
+    
 
     <div class="page-hero">
         <div class="page-hero-blob page-hero-blob-1"></div>

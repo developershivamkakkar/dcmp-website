@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 @section('title', $lp['adm_page_title'] ?? 'Admissions | ' . config('site.name'))
 @section('meta-description', $lp['adm_meta_description'] ?? config('site.meta_description'))
 @section('meta-keywords', config('site.meta_keywords'))
@@ -6,9 +6,9 @@
 @section('styles')
 <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
 <style>
-/* ── Hero ─────────────────────────────────────── */
+/* -- Hero --------------------------------------- */
 .adm-hero {
-    background: linear-gradient(135deg, #5a0103 0%, #8c0305 55%, #b00407 100%);
+    background: linear-gradient(135deg, #031D3D 0%, #052A56 55%, #00A859 100%);
     padding: 60px 0 80px;
     position: relative;
     overflow: hidden;
@@ -17,7 +17,7 @@
     content: '';
     position: absolute;
     width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(210,174,109,.18) 0%, transparent 65%);
+    background: radial-gradient(circle, rgba(0,168,89,.18) 0%, transparent 65%);
     top: -200px; right: -120px;
     pointer-events: none;
 }
@@ -33,9 +33,9 @@
 
 .adm-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(210,174,109,.18);
-    border: 1px solid rgba(210,174,109,.45);
-    color: #d2ae6d;
+    background: rgba(0,168,89,.18);
+    border: 1px solid rgba(0,168,89,.45);
+    color: #00A859;
     font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
     padding: 6px 18px; border-radius: 40px; margin-bottom: 22px;
 }
@@ -51,13 +51,13 @@
 }
 .adm-btns { display: flex; flex-wrap: wrap; gap: 12px; }
 .adm-btn-gold {
-    background: #d2ae6d; color: #1a2a4a; font-weight: 700;
+    background: #00A859; color: #fff; font-weight: 700;
     padding: 14px 32px; border-radius: 50px; font-size: 15px;
     text-decoration: none; border: none; cursor: pointer;
     transition: background .2s, transform .15s;
     display: inline-flex; align-items: center; gap: 8px;
 }
-.adm-btn-gold:hover { background: #c49d5a; color: #1a2a4a; transform: translateY(-2px); }
+.adm-btn-gold:hover { background: #009449; color: #fff; transform: translateY(-2px); }
 .adm-btn-outline {
     border: 2px solid rgba(255,255,255,.55); color: #fff; font-weight: 600;
     padding: 12px 32px; border-radius: 50px; font-size: 15px;
@@ -76,12 +76,12 @@
     padding: 36px 32px;
 }
 .adm-contact-card-title {
-    color: #d2ae6d; font-size: 11px; font-weight: 700;
+    color: #00A859; font-size: 11px; font-weight: 700;
     letter-spacing: 2px; text-transform: uppercase;
     margin-bottom: 24px; display: flex; align-items: center; gap: 8px;
 }
 .adm-contact-card-title::after {
-    content: ''; flex: 1; height: 1px; background: rgba(210,174,109,.3);
+    content: ''; flex: 1; height: 1px; background: rgba(0,168,89,.3);
 }
 .adm-contact-row {
     display: flex; align-items: flex-start; gap: 14px;
@@ -89,12 +89,12 @@
     text-decoration: none; margin-bottom: 20px; transition: color .2s;
 }
 .adm-contact-row:last-child { margin-bottom: 0; }
-.adm-contact-row:hover { color: #d2ae6d; }
+.adm-contact-row:hover { color: #00A859; }
 .adm-contact-row .ci {
     width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
-    background: rgba(210,174,109,.18);
+    background: rgba(0,168,89,.18);
     display: flex; align-items: center; justify-content: center;
-    font-size: 16px; color: #d2ae6d;
+    font-size: 16px; color: #00A859;
 }
 .adm-contact-row .ct-label { font-size: 11px; opacity: .65; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; margin-bottom: 2px; }
 .adm-contact-row .ct-val  { font-size: 14px; font-weight: 500; line-height: 1.4; }
@@ -108,10 +108,10 @@
 .adm-wa-btn:hover { background: #1ebe5c; color: #fff; transform: translateY(-2px); }
 
 /* Wave */
-.adm-wave { line-height: 0; background: #8c0305; }
+.adm-wave { line-height: 0; background: #052A56; }
 .adm-wave svg { display: block; width: 100%; }
 
-/* ── Process ───────────────────────────────────── */
+/* -- Process ------------------------------------- */
 .adm-process { background: #f8fafc; padding: 80px 0 90px; }
 .adm-eyebrow  { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #8c0305; margin-bottom: 8px; display: block; }
 .adm-section-title { font-size: clamp(22px,3vw,32px); font-weight: 800; color: #1a2a4a; }
@@ -163,20 +163,15 @@
 @section('content')
 
     {{-- Floating buttons --}}
-    <div class="floating-strip-right-bottom">
-        <a href="{{ config('site.brochure_url') }}" class="btn btn-sm" target="_blank" rel="noopener noreferrer">Download Brochure</a>
-    </div>
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" target="_blank" rel="noopener noreferrer"
-           href="{{ config('site.registration_url') ?: config('site.admissions_url') }}">Register Now</a>
-    </div>
+
+
     @if(config('site.whatsapp'))
     <a href="https://wa.me/91{{ config('site.whatsapp') }}" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-whatsapp"></i> Contact Us
     </a>
     @endif
 
-    {{-- ── HERO ── --}}
+    {{-- -- HERO -- --}}
     <section class="adm-hero">
         <div class="container adm-hero-inner">
             <div class="row align-items-center gy-5">
@@ -185,10 +180,10 @@
                 <div class="col-lg-7" data-aos="fade-right">
                     <div class="adm-badge">
                         <i class="fas fa-star"></i>
-                        {{ $lp['lp_cta_badge'] ?? 'Admissions Open 2026–27' }}
+                        {{ $lp['lp_cta_badge'] ?? 'Admissions Open 2026�27' }}
                     </div>
                     <h1 class="adm-hero-title">
-                        {{ $lp['adm_hero_title'] ?? 'Admissions 2026–27' }}
+                        {{ $lp['adm_hero_title'] ?? 'Admissions 2026�27' }}
                     </h1>
                     <p class="adm-hero-text">
                         {{ $lp['adm_hero_subtitle'] ?? '' }}
@@ -267,7 +262,7 @@
         </svg>
     </div>
 
-    {{-- ── PROCESS ── --}}
+    {{-- -- PROCESS -- --}}
     <section class="adm-process">
         <div class="container">
             <div class="text-center" data-aos="fade-up">

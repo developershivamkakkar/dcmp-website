@@ -1,4 +1,8 @@
-﻿@extends('admin/layouts/app')
+@extends('admin/layouts/app')
+
+@section('admin-title', 'Page Editor – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit website pages and manage page content')
+@section('admin-keywords', 'page editor, content, pages, admin, management')
 
 @section('main')
     <div class="content-wrapper">
@@ -42,7 +46,7 @@
                             <div class="col-md-4">
                                 <label class="form-label fw-semibold">Parent Menu</label>
                                 <select id="parentMenu" class="form-control">
-                                    <option value="">— Select parent menu —</option>
+                                    <option value="">� Select parent menu �</option>
                                     @foreach ($menu_items as $item)
                                         <option value="{{ $item->id }}">{{ $item->name }}</option>
                                     @endforeach
@@ -51,7 +55,7 @@
                             <div class="col-md-4">
                                 <label class="form-label fw-semibold">Sub Menu</label>
                                 <select id="subMenu" class="form-control">
-                                    <option value="">— Select sub menu —</option>
+                                    <option value="">� Select sub menu �</option>
                                 </select>
                             </div>
                             <div class="col-md-2 d-flex align-items-end gap-2">
@@ -74,7 +78,7 @@
                 {{-- Editor card (hidden until Load is clicked) --}}
                 <div id="editorCard" class="card d-none">
                     <div class="card-header bg-secondary text-white d-flex align-items-center justify-content-between">
-                        <h3 class="card-title mb-0" id="editorCardTitle">—</h3>
+                        <h3 class="card-title mb-0" id="editorCardTitle">�</h3>
                         <span class="badge bg-light text-dark" id="editorCardBadge"></span>
                     </div>
                     <div class="card-body">
@@ -121,7 +125,7 @@
     // Track whether the current parent has sub-menus
     var parentHasSubs = false;
 
-    // ── Toast helper ─────────────────────────────────────────────────
+    // -- Toast helper -------------------------------------------------
     function showToast(msg, type) {
         type = type || 'success';
         var toast = document.getElementById('pe-toast');
@@ -139,19 +143,19 @@
 
     function updateLoadBtn() {
         if (parentHasSubs) {
-            // Parent is a dropdown — only enable Load when a sub is selected
+            // Parent is a dropdown � only enable Load when a sub is selected
             btnLoad.disabled = !subSel.value;
         } else {
-            // Parent is a leaf — enable if parent selected
+            // Parent is a leaf � enable if parent selected
             btnLoad.disabled = !parentSel.value;
         }
     }
 
-    // ── Parent change ────────────────────────────────────────────────
+    // -- Parent change ------------------------------------------------
     parentSel.addEventListener('change', function () {
         var parentId = this.value;
 
-        subSel.innerHTML = '<option value="">— Select sub menu —</option>';
+        subSel.innerHTML = '<option value="">� Select sub menu �</option>';
         editorCard.classList.add('d-none');
         dropInfo.classList.add('d-none');
         parentHasSubs = false;
@@ -192,7 +196,7 @@
         updateLoadBtn();
     });
 
-    // ── Load button ──────────────────────────────────────────────────
+    // -- Load button --------------------------------------------------
     btnLoad.addEventListener('click', function () {
         var subVal    = subSel.value;
         var parentVal = parentSel.value;
@@ -211,7 +215,7 @@
         loadPage(id, label);
     });
 
-    // ── Load page data ───────────────────────────────────────────────
+    // -- Load page data -----------------------------------------------
     function loadPage(menuItemId, menuName) {
         setLoading(true);
         editorCard.classList.add('d-none');
@@ -239,7 +243,7 @@
             });
     }
 
-    // ── Save ─────────────────────────────────────────────────────────
+    // -- Save ---------------------------------------------------------
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 

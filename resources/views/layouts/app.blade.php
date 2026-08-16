@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {{-- ── SEO: Title ──────────────────────────────────────────────────── --}}
+    {{-- -- SEO: Title ---------------------------------------------------- --}}
     <title>@yield('title', $seo->title())</title>
 
-    {{-- ── SEO: Core meta ──────────────────────────────────────────────── --}}
+    {{-- -- SEO: Core meta ------------------------------------------------ --}}
     <meta name="description" content="@yield('meta-description', $seo->description())">
     <meta name="keywords"    content="@yield('meta-keywords',    $seo->keywords())">
     <meta name="robots"      content="@yield('robots', $seo->robots())">
     <meta name="author"      content="{{ config('site.full_name') }}">
 
-    {{-- ── SEO: Canonical URL ───────────────────────────────────────────── --}}
+    {{-- -- SEO: Canonical URL --------------------------------------------- --}}
     <link rel="canonical" href="@yield('canonical', $seo->canonical())">
 
-    {{-- ── SEO: Open Graph ─────────────────────────────────────────────── --}}
+    {{-- -- SEO: Open Graph ----------------------------------------------- --}}
     <meta property="og:type"        content="@yield('og-type', $seo->ogType())">
     <meta property="og:site_name"   content="{{ config('site.full_name') }}">
     <meta property="og:locale"      content="{{ app()->getLocale() }}">
@@ -27,7 +27,7 @@
     <meta property="og:url"         content="@yield('og-url', $seo->canonical())">
     <meta property="og:image"       content="@yield('og-image', $seo->ogImage())">
 
-    {{-- ── SEO: Twitter Card ───────────────────────────────────────────── --}}
+    {{-- -- SEO: Twitter Card --------------------------------------------- --}}
     <meta name="twitter:card"        content="summary_large_image">
     <meta name="twitter:title"       content="@yield('og-title',       $seo->ogTitle())">
     <meta name="twitter:description" content="@yield('og-description', $seo->ogDescription())">
@@ -39,19 +39,19 @@
     {{-- Favicon --}}
     <link rel="icon" type="image/x-icon" href="{{ asset(config('site.favicon')) }}">
 
-    {{-- Preconnects ─────────────────────────────────────────────────────── --}}
+    {{-- Preconnects ------------------------------------------------------- --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://kit.fontawesome.com">
 
-    {{-- ── LCP / resource preload hints (pages push their hero image here) --}}
+    {{-- -- LCP / resource preload hints (pages push their hero image here) --}}
     @stack('preload')
 
-    {{-- ── Google Fonts: Poppins (body/UI) + Raleway (headings) ────────── --}}
+    {{-- -- Google Fonts: Poppins (body/UI) + Raleway (headings) ---------- --}}
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    {{-- ── Bootstrap CSS ──────────────────────────────────────────────── --}}
+    {{-- -- Bootstrap CSS ------------------------------------------------ --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -64,21 +64,21 @@
     {{-- Bootstrap Icons (used by reels/media sections) --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    {{-- ── Google Tag Manager (head) ─────────────────────────────────── --}}
+    {{-- -- Google Tag Manager (head) ----------------------------------- --}}
     @if(config('site.google_tag_manager'))
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ config('site.google_tag_manager') }}');</script>
     @endif
 
-    {{-- ── Google Analytics (GA4) ─────────────────────────────────────── --}}
+    {{-- -- Google Analytics (GA4) --------------------------------------- --}}
     @if(config('site.google_analytics'))
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('site.google_analytics') }}"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','{{ config('site.google_analytics') }}');</script>
     @endif
 
-    {{-- ── Per-page styles ─────────────────────────────────────────────── --}}
+    {{-- -- Per-page styles ----------------------------------------------- --}}
     @yield('styles')
 
-    {{-- ── Structured Data / JSON-LD (pages push schema here) ─────────── --}}
+    {{-- -- Structured Data / JSON-LD (pages push schema here) ----------- --}}
     @stack('schema')
 
 </head>
@@ -102,7 +102,7 @@
 
     @include('footer')
 
-    {{-- FontAwesome (deferred — does not block rendering) --}}
+    {{-- FontAwesome (deferred � does not block rendering) --}}
     <script src="https://kit.fontawesome.com/ce31a4dd61.js" crossorigin="anonymous" defer></script>
 
     {{-- Bootstrap JS --}}
@@ -113,10 +113,10 @@
     {{-- AOS --}}
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
-    {{-- Core site scripts ────────────────────────────────────────────────── --}}
+    {{-- Core site scripts -------------------------------------------------- --}}
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // ── AOS animations
+            // -- AOS animations
             if (typeof AOS !== 'undefined') AOS.init({
                 once: true,
                 duration: 350,
@@ -125,8 +125,8 @@
                 disable: function () { return window.innerWidth < 768; }
             });
 
-            // ── Level-3 submenu: click toggle for mobile/touch only
-            // On desktop (≥992px) CSS :hover handles it; JS is not needed there.
+            // -- Level-3 submenu: click toggle for mobile/touch only
+            // On desktop (=992px) CSS :hover handles it; JS is not needed there.
             document.querySelectorAll('.dropdown-submenu-toggle').forEach(function (toggle) {
                 toggle.addEventListener('click', function (e) {
                     if (window.innerWidth >= 992) return; // desktop: let CSS hover handle it
@@ -146,13 +146,13 @@
                 });
             });
 
-            // ── Session alert auto-hide
+            // -- Session alert auto-hide
             var sessionAlert = document.getElementById('session-alert');
             if (sessionAlert) {
                 setTimeout(function () { sessionAlert.style.display = 'none'; }, 2000);
             }
 
-            // ── Hide page loader
+            // -- Hide page loader
             var loader = document.getElementById('page-loader');
             if (loader) {
                 setTimeout(function () {
@@ -161,18 +161,18 @@
                 }, 300);
             }
 
-            // ── Contact success modal (only if present)
+            // -- Contact success modal (only if present)
             if (document.getElementById('contact-alert') && document.getElementById('successModal')) {
                 new bootstrap.Modal(document.getElementById('successModal')).show();
             }
 
-            // ── Popup modal (only if element exists on this page)
+            // -- Popup modal (only if element exists on this page)
             var popupModalEl = document.getElementById('popupModal');
             if (popupModalEl) {
                 new bootstrap.Modal(popupModalEl).show();
             }
 
-            // ── Sticky header on scroll
+            // -- Sticky header on scroll
             (function() {
                 var h = document.getElementById('site-header');
                 if (!h) return;
@@ -187,7 +187,7 @@
         });
     </script>
 
-    {{-- ── Sidebar "Register Now" CTA ─────────────────────────────────── --}}
+    {{-- -- Sidebar "Register Now" CTA ----------------------------------- --}}
     @php
         $sidebarEnabled = \App\Models\SiteSetting::get('sidebar_register_enabled', '0');
         $sidebarText    = \App\Models\SiteSetting::get('sidebar_register_text', 'Register Now');

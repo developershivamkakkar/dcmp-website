@@ -10,7 +10,10 @@ class PageContent extends Model
     protected $fillable = [
         'menu_item_id',
         'content',
-        'title'
+        'title',
+        'meta_title',
+        'meta_description',
+        'meta_keywords'
     ];
     use HasFactory;
 }

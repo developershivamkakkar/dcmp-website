@@ -9,6 +9,7 @@ use App\Models\Popup;
 use App\Models\Blog;
 use App\Models\LandingSetting;
 use App\Models\Testimonial;
+use App\Models\LearningPartner;
 
 
 class FrontendHomePageController extends Controller
@@ -22,6 +23,7 @@ class FrontendHomePageController extends Controller
         $blogs = Blog::where('status', 'published')->orderBy('created_at', 'desc')->take(4)->get();
         $lp = LandingSetting::allCached();
         $homeTestimonials = Testimonial::active()->orderBy('sort_order')->latest()->take(8)->get();
-        return view('index', compact('banners', 'explorebanners', 'menuItems', 'popups', 'blogs', 'lp', 'homeTestimonials'));
+        $learningPartners = LearningPartner::where('status', 'active')->orderBy('display_order')->take(6)->get();
+        return view('index', compact('banners', 'explorebanners', 'menuItems', 'popups', 'blogs', 'lp', 'homeTestimonials', 'learningPartners'));
     }
 }

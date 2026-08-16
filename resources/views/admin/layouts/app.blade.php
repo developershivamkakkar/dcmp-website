@@ -1,10 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('site.name') }} Admin Panel</title>
+
+    {{-- -- SEO: Title ---------------------------------------------------- --}}
+    <title>@yield('admin-title', config('site.name') . ' Admin Panel')</title>
+
+    {{-- -- SEO: Meta Tags ------------------------------------------------ --}}
+    <meta name="description" content="@yield('admin-description', 'Admin Panel for ' . config('site.full_name'))">
+    <meta name="keywords" content="@yield('admin-keywords', 'admin, dashboard, management')">
+    <meta name="robots" content="@yield('admin-robots', 'noindex, nofollow')">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -25,7 +33,7 @@
             text-decoration: none;
         }
 
-        /* ── CKEditor WYSIWYG body — mirrors frontend .page-editor styles ── */
+        /* -- CKEditor WYSIWYG body � mirrors frontend .page-editor styles -- */
         .ck.ck-editor {
             width: 100% !important;
             display: block !important;
@@ -75,12 +83,12 @@
             font-weight: 700;
         }
         .ck-editor__editable_inline h2 {
-            border-left: 4px solid #d2ae6d;
+            border-left: 4px solid #00A859;
             padding-left: 12px;
         }
         .ck-editor__editable_inline a { color: #0c54a0; text-decoration: underline; }
         .ck-editor__editable_inline blockquote {
-            border-left: 4px solid #d2ae6d;
+            border-left: 4px solid #00A859;
             padding: 12px 20px;
             background: #edf3fb;
             border-radius: 0 8px 8px 0;
@@ -160,7 +168,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{ route('admin.dashboard') }}" class="brand-link bg-white" style="height: 57px;">
-                <img src="{{ asset('storage/assets/dbs.png') }}" alt="dbels Logo"
+                <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dbels Logo"
                     class="brand-image img-circle elevation-1">
                 <span class="brand-text font-weight-dark">{{ config('site.name') }} Admin Panel</span>
             </a>
@@ -222,6 +230,14 @@
                                 <a href="{{ route('admin.testimonials.index') }}" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Opinion That Matters</p>
+                                </a>
+                            </li>
+                        @endif
+                        @if (auth()->user()->can('module-manage-learning-partners'))
+                            <li class="nav-item">
+                                <a href="{{ route('admin.learning-partners.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Learning Partners</p>
                                 </a>
                             </li>
                         @endif
@@ -384,7 +400,7 @@
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
-            <strong>Copyright &copy; 2024 </strong>All rights reserved. Developed with ❤ by developerShivam
+            <strong>Copyright &copy; 2024 </strong>All rights reserved. Developed with ? by developerShivam
         </footer>
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
@@ -418,37 +434,37 @@
     <script type="module">
         import {
             ClassicEditor,
-            /* ── Core ─────────────────────────────────────── */
+            /* -- Core --------------------------------------- */
             Essentials, Paragraph, SelectAll,
-            /* ── Text formatting ─────────────────────────── */
+            /* -- Text formatting --------------------------- */
             Bold, Italic, Underline, Strikethrough, Code,
             Subscript, Superscript, RemoveFormat,
-            /* ── Fonts ───────────────────────────────────── */
+            /* -- Fonts ------------------------------------- */
             Font, FontSize, FontFamily, FontColor, FontBackgroundColor,
-            /* ── Headings & structure ────────────────────── */
+            /* -- Headings & structure ---------------------- */
             Heading, HorizontalLine, PageBreak, BlockQuote,
-            /* ── Alignment & indent ──────────────────────── */
+            /* -- Alignment & indent ------------------------ */
             Alignment, Indent, IndentBlock,
-            /* ── Lists ───────────────────────────────────── */
+            /* -- Lists ------------------------------------- */
             List, ListProperties, TodoList,
-            /* ── Link ────────────────────────────────────── */
+            /* -- Link -------------------------------------- */
             Link, LinkImage, AutoLink,
-            /* ── Image ───────────────────────────────────── */
+            /* -- Image ------------------------------------- */
             Image, ImageCaption, ImageInsert, ImageResize,
             ImageResizeEditing, ImageResizeHandles,
             ImageStyle, ImageTextAlternative, ImageToolbar, ImageUpload,
             AutoImage, SimpleUploadAdapter,
-            /* ── Table ───────────────────────────────────── */
+            /* -- Table ------------------------------------- */
             Table, TableCaption, TableCellProperties,
             TableColumnResize, TableProperties, TableToolbar,
-            /* ── Media & code ────────────────────────────── */
+            /* -- Media & code ------------------------------ */
             MediaEmbed, CodeBlock,
-            /* ── Special characters ──────────────────────── */
+            /* -- Special characters ------------------------ */
             SpecialCharacters, SpecialCharactersArrows,
             SpecialCharactersCurrency, SpecialCharactersEssentials,
             SpecialCharactersLatin, SpecialCharactersMathematical,
             SpecialCharactersText,
-            /* ── Advanced ────────────────────────────────── */
+            /* -- Advanced ---------------------------------- */
             FindAndReplace, Highlight, ShowBlocks, SourceEditing,
             GeneralHtmlSupport, HtmlEmbed,
             Autoformat, TextTransformation,

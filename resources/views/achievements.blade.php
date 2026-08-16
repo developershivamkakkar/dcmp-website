@@ -1,10 +1,10 @@
-﻿@extends('layouts.app')
-@section('title', 'Achievements – Dass and Brown World School')
+@extends('layouts.app')
+@section('title', 'Achievements � Dass and Brown World School')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
     <style>
-        /* ── Tab switcher ─────────────────────────────────────────────── */
+        /* -- Tab switcher ----------------------------------------------- */
         .achieve-tabs { gap: 12px; }
         .achieve-tabs .nav-link {
             border-radius: 50px;
@@ -21,7 +21,7 @@
             color: #fff;
         }
 
-        /* ── Category filter pills ────────────────────────────────────── */
+        /* -- Category filter pills -------------------------------------- */
         .cat-pill {
             border-radius: 50px;
             padding: 6px 20px;
@@ -36,7 +36,7 @@
         .cat-pill:hover  { border-color: var(--color-primary); color: var(--color-primary); }
         .cat-pill.active { background: var(--color-primary); border-color: var(--color-primary); color: #fff; }
 
-        /* ── School achievement card ──────────────────────────────────── */
+        /* -- School achievement card ------------------------------------ */
         .school-card { border-radius: 14px; overflow: hidden; transition: transform .25s, box-shadow .25s; }
         .school-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(140,3,5,.15) !important; }
         .school-card .card-img-wrap { position: relative; height: 220px; overflow: hidden; }
@@ -58,7 +58,7 @@
         }
         .school-card .card-body { padding: 16px 18px; }
 
-        /* ── Student achievement card ─────────────────────────────────── */
+        /* -- Student achievement card ----------------------------------- */
         .student-card-wrap { border-radius: 14px; overflow: hidden; transition: transform .25s, box-shadow .25s; }
         .student-card-wrap:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,.12) !important; }
         .student-card-wrap .card-img-wrap { position: relative; height: 180px; overflow: hidden; }
@@ -88,12 +88,12 @@
             color: var(--cat-color);
         }
 
-        /* ── Stats strip ──────────────────────────────────────────────── */
+        /* -- Stats strip ------------------------------------------------ */
         .stats-strip { background: var(--color-primary); border-radius: 14px; }
         .stats-strip .stat-val { font-size: 2rem; font-weight: 800; color: #fff; line-height: 1; }
         .stats-strip .stat-lbl { font-size: .8rem; color: rgba(255,255,255,.75); text-transform: uppercase; letter-spacing: .06em; }
 
-        /* ── Section heading ──────────────────────────────────────────── */
+        /* -- Section heading -------------------------------------------- */
         .section-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
         .section-heading .sh-icon {
             width: 48px; height: 48px; border-radius: 50%;
@@ -143,7 +143,7 @@
 
     <div class="container py-5">
 
-        {{-- ── Stats strip ──────────────────────────────────────────────── --}}
+        {{-- -- Stats strip ------------------------------------------------ --}}
         @if ($achievements->isNotEmpty())
         <div class="stats-strip p-4 mb-5" data-aos="fade-up">
             <div class="row text-center g-3">
@@ -167,7 +167,7 @@
         </div>
         @endif
 
-        {{-- ── Tab switcher ──────────────────────────────────────────────── --}}
+        {{-- -- Tab switcher ------------------------------------------------ --}}
         <ul class="nav achieve-tabs justify-content-center mb-5" id="achieveTabs" data-aos="fade-up">
             <li class="nav-item">
                 <a class="nav-link active" data-bs-toggle="tab" href="#school-tab">
@@ -185,7 +185,7 @@
 
         <div class="tab-content">
 
-            {{-- ══════════════════ SCHOOL TAB ══════════════════════════════ --}}
+            {{-- ------------------ SCHOOL TAB ------------------------------ --}}
             <div class="tab-pane fade show active" id="school-tab">
 
                 <div class="section-heading" data-aos="fade-up">
@@ -238,7 +238,7 @@
                 @endif
             </div>
 
-            {{-- ══════════════════ STUDENT TAB ═════════════════════════════ --}}
+            {{-- ------------------ STUDENT TAB ----------------------------- --}}
             <div class="tab-pane fade" id="student-tab">
 
                 <div class="section-heading" data-aos="fade-up">
@@ -292,7 +292,7 @@
                                                 <strong>{{ $a->student_name }}</strong>
                                             </span>
                                             @if ($a->class_name)
-                                                <span class="text-muted">·</span>
+                                                <span class="text-muted">�</span>
                                                 <span><i class="fas fa-chalkboard me-1"></i>{{ $a->class_name }}</span>
                                             @endif
                                         </div>

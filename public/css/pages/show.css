@@ -5,7 +5,7 @@
 /* ══ Page Hero ════════════════════════════════════════════════════ */
 .page-hero {
     position: relative;
-    background: linear-gradient(135deg, #5a0103 0%, #8C0305 45%, #b00407 100%);
+    background: linear-gradient(135deg, #031D3D 0%, #052A56 45%, #00A859 100%);
     padding: 72px 20px 90px;
     text-align: center;
     overflow: hidden;
@@ -70,8 +70,8 @@
     text-decoration: none;
     transition: color .2s;
 }
-.page-hero .breadcrumb-item a:hover  { color: #d2ae6d; }
-.page-hero .breadcrumb-item.active   { color: #d2ae6d; font-weight: 600; }
+.page-hero .breadcrumb-item a:hover  { color: #00A859; }
+.page-hero .breadcrumb-item.active   { color: #00A859; font-weight: 600; }
 .page-hero .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,0.45); }
 
 /* Wave divider */
@@ -107,7 +107,7 @@
 /* Animated gradient accent bar */
 .page-content-accent-bar {
     height: 5px;
-    background: linear-gradient(90deg, #E31E25, #d2ae6d, #E31E25);
+    background: linear-gradient(90deg, #E31E25, #00A859, #E31E25);
     background-size: 200% 100%;
     animation: accentSlide 4s linear infinite;
 }
@@ -134,7 +134,7 @@
 .page-content-body h5,
 .page-content-body h6 {
     font-family: 'Raleway', sans-serif;
-    color:0305;
+    color: #052A56;
     margin-top: 1.8rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
@@ -142,13 +142,13 @@
 }
 .page-content-body h2 {
     font-size: clamp(1.3rem, 3vw, 1.65rem);
-    border-left: 4px solid #d2ae6d;
+    border-left: 4px solid #00A859;
     padding-left: 14px;
 }
 .page-content-body h3 {
     font-size: clamp(1.1rem, 2.5vw, 1.35rem);
     padding-left: 10px;
-    border-left: 3px solid rgba(210,174,109,0.55);
+    border-left: 3px solid rgba(0, 168, 89, 0.55);
 }
 .page-content-body p {
     font-size: 15.5px;
@@ -175,14 +175,14 @@
 .page-content-body li { margin-bottom: 0.45rem; }
 
 .page-content-body blockquote {
-    border-left: 4px solid #d2ae6d;
+    border-left: 4px solid #00A859;
     padding: 14px 22px;
-    background: #fdf8ee;
+    background: rgba(255,255,255,0.12);
     border-radius: 0 10px 10px 0;
     color: #555;
     margin: 1.8rem 0;
     font-style: italic;
-    box-shadow: inset 0 0 0 1px rgba(210,174,109,0.25);
+    box-shadow: inset 0 0 0 1px rgba(0, 168, 89, 0.25);
 }
 .page-content-body hr {
     border: none;
@@ -231,7 +231,7 @@
 }
 .page-content-body table th,
 .page-content-body figure.table table th {
-    background-color: #E31E25 !important;
+    background-color: var(--color-primary, #E31E25) !important;
     color: #ffffff !important;
     font-weight: 600;
     padding: 13px 16px;

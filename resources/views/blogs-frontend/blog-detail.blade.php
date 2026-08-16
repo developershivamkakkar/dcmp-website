@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
     <style>
         /* ── Page Editor — Brand Colors ─────────────────────────────── */
-        /*    Primary (Maroon)  #b80407  |  Accent (Gold) #d2ae6d  |  Link (Blue) #0066b5  */
+        /*    Primary (Teal)  #052A56  |  Accent (Green) #00A859  |  Link (Blue) #0066b5  */
         .page-editor .content {
             overflow-x: auto;
             word-wrap: break-word;
@@ -22,13 +22,13 @@
         .page-editor h5,
         .page-editor h6 {
             font-family: 'Lora', serif;
-            color: #b80407;
+            color: #052A56;
             margin-top: 1.6rem;
             margin-bottom: 0.75rem;
             font-weight: 700;
         }
         .page-editor h2 {
-            border-left: 4px solid #d2ae6d;
+            border-left: 4px solid #00A859;
             padding-left: 12px;
         }
 
@@ -59,7 +59,7 @@
 
         /* Blockquote */
         .page-editor blockquote {
-            border-left: 4px solid #d2ae6d;
+            border-left: 4px solid #00A859;
             padding: 12px 20px;
             background: #fdf8ee;
             border-radius: 0 8px 8px 0;
@@ -80,7 +80,7 @@
         }
         .page-editor table th,
         .page-editor figure.table table th {
-            background-color: #b80407 !important;
+            background-color: #052A56 !important;
             color: #ffffff !important;
             font-weight: 600;
             padding: 12px 16px;
@@ -131,9 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <a href="https://wa.me/6284058009" class="whatsapp-button" target="_blank">
     <i class="fab fa-whatsapp"></i> Contact Us
 </a>
-<div class="floating-strip-right">
-    <a class="btn btn-sm" href="{{ route('admissions.landing.get') }}">Enquire Now</a>
-</div>
+
 
 {{-- Page Hero Banner --}}
 <div class="page-hero">
@@ -188,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 {{-- Latest Blogs --}}
                 <div class="bg-white rounded-3 shadow-sm p-4 mb-4">
-                    <h5 class="fw-bold mb-3 pb-2 border-bottom" style="color:#b80407;">
+                    <h5 class="fw-bold mb-3 pb-2 border-bottom" style="color:#052A56;">
                         <i class="fas fa-newspaper me-2"></i>Latest Blogs
                     </h5>
                     <ul class="list-unstyled mb-0">
@@ -217,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 {{-- YouTube Video --}}
                 <div class="bg-white rounded-3 shadow-sm p-4">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="fw-bold mb-0" style="color:#b80407; font-size:15px;">
+                        <h5 class="fw-bold mb-0" style="color:#052A56; font-size:15px;">
                             <i class="fab fa-youtube me-2"></i>DBELS Walkthrough
                         </h5>
                         <a class="text-decoration-none small fw-semibold link-orange" target="_blank"

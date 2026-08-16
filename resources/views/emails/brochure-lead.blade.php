@@ -17,7 +17,7 @@
                     <!-- Header with Logo -->
                     <tr>
                         <td align="center" style="background: #004085; padding: 20px;">
-                            <img src="https://dassandbrownschool.com/storage/assets/dbs.png" alt="School Logo"
+                            <img src="https://dassandbrownschool.com/storage/assets/dbs-logo.webp" alt="School Logo"
                                 width="120" style="display:block; margin:0 auto;">
                             <h2 style="color:#ffffff; margin:15px 0 0; font-size:22px; font-weight:normal;">New Brochure
                                 Lead</h2>

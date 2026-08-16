@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Edit Event – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit and update event information')
+@section('admin-keywords', 'edit event, update, calendar, activities, admin')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

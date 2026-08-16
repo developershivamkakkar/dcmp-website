@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Roles – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage user roles and permissions')
+@section('admin-keywords', 'roles, permissions, access control, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

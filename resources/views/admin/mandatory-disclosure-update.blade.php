@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Edit Mandatory Disclosure – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit mandatory disclosure documents')
+@section('admin-keywords', 'mandatory disclosure, edit, documents, admin, compliance')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

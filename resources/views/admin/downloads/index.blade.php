@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Downloads – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage downloadable files and documents for students')
+@section('admin-keywords', 'downloads, files, documents, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Upload Gallery Images – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Upload and manage gallery images')
+@section('admin-keywords', 'upload, gallery, images, admin')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Update Resource – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit and manage resource information')
+@section('admin-keywords', 'edit resource, update, documents, admin')
+
 @section('main')
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

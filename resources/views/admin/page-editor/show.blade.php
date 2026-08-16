@@ -1,5 +1,9 @@
 @extends('admin.layouts.app')
 
+@section('admin-title', 'Page Editor – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit website pages and manage page content')
+@section('admin-keywords', 'page editor, content, pages, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <!-- Content Header -->
@@ -49,6 +53,40 @@
                                             <input id="title" class="form-control" type="text" name="title"
                                                 value="{{ old('title', $menuItem->pageContent->title ?? '') }}">
                                             @error('title')
+                                                <div class="text-danger mt-2">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+
+                                        <!-- Meta Title -->
+                                        <div class="form-group mb-4">
+                                            <label for="meta_title" class="form-label">Meta Title (SEO)</label>
+                                            <input id="meta_title" class="form-control" type="text" name="meta_title"
+                                                placeholder="50-60 characters recommended"
+                                                value="{{ old('meta_title', $menuItem->pageContent->meta_title ?? '') }}">
+                                            <small class="text-muted">Used for browser title and search results</small>
+                                            @error('meta_title')
+                                                <div class="text-danger mt-2">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+
+                                        <!-- Meta Description -->
+                                        <div class="form-group mb-4">
+                                            <label for="meta_description" class="form-label">Meta Description (SEO)</label>
+                                            <textarea id="meta_description" class="form-control" name="meta_description"
+                                                rows="2" placeholder="150-160 characters recommended">{{ old('meta_description', $menuItem->pageContent->meta_description ?? '') }}</textarea>
+                                            <small class="text-muted">Displayed under page title in search results</small>
+                                            @error('meta_description')
+                                                <div class="text-danger mt-2">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+
+                                        <!-- Meta Keywords -->
+                                        <div class="form-group mb-4">
+                                            <label for="meta_keywords" class="form-label">Meta Keywords (SEO)</label>
+                                            <textarea id="meta_keywords" class="form-control" name="meta_keywords"
+                                                rows="2" placeholder="Enter keywords separated by commas">{{ old('meta_keywords', $menuItem->pageContent->meta_keywords ?? '') }}</textarea>
+                                            <small class="text-muted">Comma-separated keywords for search engines</small>
+                                            @error('meta_keywords')
                                                 <div class="text-danger mt-2">{{ $message }}</div>
                                             @enderror
                                         </div>

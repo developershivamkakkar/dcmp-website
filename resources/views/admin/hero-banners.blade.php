@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Hero Banners – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage hero banners and featured images for the homepage')
+@section('admin-keywords', 'banners, hero, featured, images, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

@@ -1,4 +1,8 @@
-﻿@extends('admin/layouts/app')
+@extends('admin/layouts/app')
+
+@section('admin-title', 'Menu Items – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage website navigation menu and menu items')
+@section('admin-keywords', 'menu, navigation, items, admin, management')
 
 @section('main')
 <div class="content-wrapper">
@@ -57,7 +61,7 @@
                                 <div class="form-group mb-3">
                                     <label>Parent Item</label>
                                     <select name="parent_id" class="form-control form-select">
-                                        <option value="">— None (top-level) —</option>
+                                        <option value="">� None (top-level) �</option>
                                         @foreach ($all_items as $item)
                                             @if (!$item->parent_id)
                                                 <option value="{{ $item->id }}" {{ old('parent_id') == $item->id ? 'selected' : '' }}>
@@ -65,7 +69,7 @@
                                                 </option>
                                                 @foreach ($item->children as $child)
                                                     <option value="{{ $child->id }}" {{ old('parent_id') == $child->id ? 'selected' : '' }}>
-                                                        &nbsp;&nbsp;&nbsp;↳ {{ $child->name }}
+                                                        &nbsp;&nbsp;&nbsp;? {{ $child->name }}
                                                     </option>
                                                 @endforeach
                                             @endif
@@ -110,7 +114,7 @@
                                                 <i class="fas fa-grip-vertical drag-icon"></i>
                                                 <span class="menu-builder-name">{{ $item->name }}</span>
                                                 @if($item->url)
-                                                    <span class="menu-builder-url text-muted">— {{ $item->url }}</span>
+                                                    <span class="menu-builder-url text-muted">� {{ $item->url }}</span>
                                                 @endif
                                                 <span class="badge {{ $item->status === 'active' ? 'bg-success' : 'bg-secondary' }} ms-2">{{ $item->status }}</span>
                                                 <div class="menu-builder-actions ms-auto">
@@ -133,7 +137,7 @@
                                                             <div class="menu-builder-handle">
                                                                 <i class="fas fa-grip-vertical drag-icon"></i>
                                                                 <span class="menu-builder-name">{{ $child->name }}</span>
-                                                                @if($child->url)<span class="menu-builder-url text-muted">— {{ $child->url }}</span>@endif
+                                                                @if($child->url)<span class="menu-builder-url text-muted">� {{ $child->url }}</span>@endif
                                                                 <span class="badge {{ $child->status === 'active' ? 'bg-success' : 'bg-secondary' }} ms-2">{{ $child->status }}</span>
                                                                 <div class="menu-builder-actions ms-auto">
                                                                     <button class="btn btn-xs btn-outline-primary btn-edit"
@@ -155,7 +159,7 @@
                                                                             <div class="menu-builder-handle">
                                                                                 <i class="fas fa-grip-vertical drag-icon"></i>
                                                                                 <span class="menu-builder-name">{{ $grandchild->name }}</span>
-                                                                                @if($grandchild->url)<span class="menu-builder-url text-muted">— {{ $grandchild->url }}</span>@endif
+                                                                                @if($grandchild->url)<span class="menu-builder-url text-muted">� {{ $grandchild->url }}</span>@endif
                                                                                 <span class="badge {{ $grandchild->status === 'active' ? 'bg-success' : 'bg-secondary' }} ms-2">{{ $grandchild->status }}</span>
                                                                                 <div class="menu-builder-actions ms-auto">
                                                                                     <button class="btn btn-xs btn-outline-primary btn-edit"
@@ -211,12 +215,12 @@
                     <div class="form-group mb-3">
                         <label>Parent Item</label>
                         <select name="parent_id" id="edit-parent_id" class="form-control form-select">
-                            <option value="">— None (top-level) —</option>
+                            <option value="">� None (top-level) �</option>
                             @foreach ($all_items as $item)
                                 @if (!$item->parent_id)
                                     <option value="{{ $item->id }}">{{ $item->name }}</option>
                                     @foreach ($item->children as $child)
-                                        <option value="{{ $child->id }}">&nbsp;&nbsp;&nbsp;↳ {{ $child->name }}</option>
+                                        <option value="{{ $child->id }}">&nbsp;&nbsp;&nbsp;? {{ $child->name }}</option>
                                     @endforeach
                                 @endif
                             @endforeach

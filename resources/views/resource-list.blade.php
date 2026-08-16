@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'DABELS-RESOURCE-LIST')
+@section('title', 'DBS-RESOURCE-LIST')
 @section('content')
 
     <!-- Floating WhatsApp Button -->
@@ -8,10 +8,7 @@
         Contact Us
     </a>
 
-    <!-- Floating Strip Right -->
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" href="{{ route('admissions.landing.get') }}">Enquire Now</a>
-    </div>
+    
 
     {{-- Page Hero Banner --}}
     <div class="page-hero">

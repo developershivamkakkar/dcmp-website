@@ -1,5 +1,5 @@
-﻿@extends('layouts.app')
-@section('title', 'Mandatory Disclosure – DBS')
+@extends('layouts.app')
+@section('title', 'Mandatory Disclosure � DBS')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
@@ -13,10 +13,7 @@
         <i class="fab fa-whatsapp"></i> Contact Us
     </a>
 
-    <!-- Floating Strip Right -->
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" target="_blank" href="https://admissions.dassandbrownschool.com/">Register Now</a>
-    </div>
+    
 
     {{-- Page Hero Banner --}}
     <div class="page-hero">
@@ -41,7 +38,7 @@
     <div class="container py-5" style="max-width:960px;">
         @foreach ($records as $record)
 
-        {{-- ── Section 1: General Information ────────────────────────── --}}
+        {{-- -- Section 1: General Information -------------------------- --}}
         <div class="md-section-card" data-aos="fade-up">
             <div class="md-section-header">
                 <i class="fas fa-school"></i> General Information
@@ -96,7 +93,7 @@
             </div>
         </div>
 
-        {{-- ── Section 2: Legal & Compliance Documents ────────────────── --}}
+        {{-- -- Section 2: Legal & Compliance Documents ------------------ --}}
         <div class="md-section-card" data-aos="fade-up" data-aos-delay="50">
             <div class="md-section-header">
                 <i class="fas fa-file-alt"></i> Legal &amp; Compliance Documents
@@ -166,7 +163,7 @@
             </div>
         </div>
 
-        {{-- ── Section 3: Academic Documents ───────────────────────────── --}}
+        {{-- -- Section 3: Academic Documents ----------------------------- --}}
         <div class="md-section-card" data-aos="fade-up" data-aos-delay="100">
             <div class="md-section-header">
                 <i class="fas fa-book-open"></i> Academic Documents
@@ -211,7 +208,7 @@
             </div>
         </div>
 
-        {{-- ── Section 4: Staff Details ─────────────────────────────────── --}}
+        {{-- -- Section 4: Staff Details ----------------------------------- --}}
         <div class="md-section-card" data-aos="fade-up" data-aos-delay="150">
             <div class="md-section-header">
                 <i class="fas fa-chalkboard-teacher"></i> Staff Details
@@ -238,17 +235,17 @@
                         </tr>
                         <tr>
                             <td class="md-sno">&nbsp;</td>
-                            <td class="md-label ps-4">↳ PGT</td>
+                            <td class="md-label ps-4">? PGT</td>
                             <td class="md-value">{{ $record->pgt }}</td>
                         </tr>
                         <tr>
                             <td class="md-sno">&nbsp;</td>
-                            <td class="md-label ps-4">↳ TGT</td>
+                            <td class="md-label ps-4">? TGT</td>
                             <td class="md-value">{{ $record->tgt }}</td>
                         </tr>
                         <tr>
                             <td class="md-sno">&nbsp;</td>
-                            <td class="md-label ps-4">↳ PRT</td>
+                            <td class="md-label ps-4">? PRT</td>
                             <td class="md-value">{{ $record->prt }}</td>
                         </tr>
                         <tr>
@@ -271,7 +268,7 @@
             </div>
         </div>
 
-        {{-- ── Section 5: Infrastructure ────────────────────────────────── --}}
+        {{-- -- Section 5: Infrastructure ---------------------------------- --}}
         <div class="md-section-card" data-aos="fade-up" data-aos-delay="200">
             <div class="md-section-header">
                 <i class="fas fa-building"></i> Infrastructure
@@ -326,7 +323,7 @@
                                         <i class="fab fa-youtube me-1"></i>Watch Video
                                     </a>
                                 @else
-                                    —
+                                    �
                                 @endif
                             </td>
                         </tr>

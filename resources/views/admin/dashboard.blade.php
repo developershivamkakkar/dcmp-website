@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Dashboard – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Admin dashboard for managing ' . config('site.full_name') . ' website content.')
+@section('admin-keywords', 'admin, dashboard, management, site control')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

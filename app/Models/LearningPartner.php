@@ -4,12 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Collection;
 
-class HeroBanner extends Model
+class LearningPartner extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'banner_image_path'
+        'name',
+        'description',
+        'logo_path',
+        'website_url',
+        'display_order',
+        'status',
     ];
 }

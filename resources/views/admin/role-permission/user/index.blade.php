@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Users – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage admin users and staff accounts')
+@section('admin-keywords', 'users, admin, staff, accounts, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

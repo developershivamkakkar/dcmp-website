@@ -1,5 +1,9 @@
 @extends('admin.layouts.app')
 
+@section('admin-title', 'Landing Page Editor – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit landing page sections and content')
+@section('admin-keywords', 'landing page, editor, content, admin, management')
+
 @section('main')
 <style>
     .lp-section-card {
@@ -99,10 +103,10 @@
 
                 {{-- ── Admissions Page ─────────────────────────── --}}
                 <div class="card lp-section-card">
-                    <div class="card-header" style="background: linear-gradient(135deg, #5a0103, #8c0305);">
+                    <div class="card-header" style="background: linear-gradient(135deg, #031D3D, #052A56);">
                         <i class="fas fa-graduation-cap"></i>
                         <h5>Admissions Page <small style="font-size:11px;opacity:.8;margin-left:6px;">
-                            <a href="{{ url('admissions') }}" target="_blank" style="color:#d2ae6d;">Preview <i class="fas fa-external-link-alt fa-xs"></i></a>
+                            <a href="{{ url('admissions') }}" target="_blank" style="color:#00A859;">Preview <i class="fas fa-external-link-alt fa-xs"></i></a>
                         </small></h5>
                     </div>
                     <div class="card-body">

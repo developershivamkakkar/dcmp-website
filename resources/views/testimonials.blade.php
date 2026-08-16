@@ -9,7 +9,7 @@
     /* ── Hero ──────────────────────────────────────────────────────── */
     .testimonials-hero {
         position: relative;
-        background: linear-gradient(135deg, var(--color-primary, #8c0305) 0%, #3d0102 60%, #5a0204 100%);
+        background: linear-gradient(135deg, var(--color-primary, #052A56) 0%, #031D3D 60%, #00A859 100%);
         padding: 80px 0 100px;
         text-align: center;
         color: #fff;

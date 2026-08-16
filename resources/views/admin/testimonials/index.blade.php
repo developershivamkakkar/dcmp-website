@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Testimonials – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage student and parent testimonials')
+@section('admin-keywords', 'testimonials, reviews, feedback, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

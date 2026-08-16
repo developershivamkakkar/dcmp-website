@@ -1,5 +1,8 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Contacts – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'View and manage contact form submissions')
+@section('admin-keywords', 'contacts, inquiries, messages, admin, management')
 
 @section('main')
     <div class="content-wrapper">

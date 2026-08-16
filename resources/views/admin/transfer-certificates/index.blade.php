@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Transfer Certificates – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage student transfer certificates')
+@section('admin-keywords', 'transfer certificates, documents, admin, management')
+
 @section('main')
 <div class="content-wrapper">
     <div class="content-header">

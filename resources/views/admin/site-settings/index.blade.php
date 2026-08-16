@@ -1,4 +1,8 @@
-﻿@extends('admin/layouts/app')
+@extends('admin/layouts/app')
+
+@section('admin-title', 'Site Settings – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Configure global site settings and preferences')
+@section('admin-keywords', 'settings, configuration, preferences, admin')
 
 @section('main')
     <div class="content-wrapper">

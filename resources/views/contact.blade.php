@@ -6,15 +6,8 @@
 @section('meta-keywords', config('site.meta_keywords'))
 
 @section('content')
-    <!-- Floating Strip Right Bottom -->
-    <div class="floating-strip-right-bottom">
-        <a target="_blank" href="{{ config('site.brochure_url') }}" class="btn btn-sm"> Download Brochure
-        </a>
-    </div>
-    <!-- Floating Strip Right -->
-    <div class="floating-strip-right">
-        <a class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquire Now</a>
-    </div>
+
+
 
 
     <!-- Floating WhatsApp Button -->
@@ -31,13 +24,16 @@
             <h1 class="page-hero-title" data-aos="fade-up">Contact Us</h1>
             <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="120">
                 <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="{{ route('home.get') }}"><i class="fas fa-home me-1"></i>Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('home.get') }}"><i class="fas fa-home me-1"></i>Home</a>
+                    </li>
                     <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
                 </ol>
             </nav>
         </div>
         <div class="page-hero-wave">
-            <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6f9"/></svg>
+            <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#f4f6f9" />
+            </svg>
         </div>
     </div>
 
@@ -71,37 +67,49 @@
                         <h3 class="fw-bold">Shaping the Future of Education</h3>
                         <div class="my-2">
                             <h5 class="fw-bold">Site Office:</h5>
-                            <p>{{ config('site.address.line1') }}<br>{{ config('site.address.line2') }}<br>{{ config('site.address.city') }}, {{ config('site.address.state') }} – {{ config('site.address.postal') }}</p>
-                            <p><i class="fas fa-envelope me-1"></i><a href="mailto:{{ config('site.email_info') }}" class="text-reset text-decoration-none">{{ config('site.email_info') }}</a></p>
+                            <p>{{ config('site.address.line1') }}<br>{{ config('site.address.line2') }}<br>{{ config('site.address.city') }},
+                                {{ config('site.address.state') }} – {{ config('site.address.postal') }}
+                            </p>
+                            <p><i class="fas fa-envelope me-1"></i><a href="mailto:{{ config('site.email_info') }}"
+                                    class="text-reset text-decoration-none">{{ config('site.email_info') }}</a></p>
                         </div>
 
                         <div class="my-2">
                             <h5 class="fw-bold">Admissions Office:</h5>
-                            <p><i class="fas fa-envelope me-1"></i><a href="mailto:{{ config('site.email_admissions') }}" class="text-reset text-decoration-none">{{ config('site.email_admissions') }}</a></p>
+                            <p><i class="fas fa-envelope me-1"></i><a href="mailto:{{ config('site.email_admissions') }}"
+                                    class="text-reset text-decoration-none">{{ config('site.email_admissions') }}</a></p>
                         </div>
                         <div class="mt-2">
                             <h4 class="fw-bold">Call us:</h4>
-                            <p><i class="fas fa-phone me-1"></i><a href="tel:{{ preg_replace('/[^0-9+]/', '', config('site.phone')) }}" class="text-reset text-decoration-none">{{ config('site.phone') }}</a></p>
+                            <p><i class="fas fa-phone me-1"></i><a
+                                    href="tel:{{ preg_replace('/[^0-9+]/', '', config('site.phone')) }}"
+                                    class="text-reset text-decoration-none">{{ config('site.phone') }}</a></p>
                         </div>
                         <h5 class="mt-2 mb-2">Follow us on:</h5>
                         <div class="mt-2 mb-4">
                             @if(config('site.social.facebook'))
-                            <a href="{{ config('site.social.facebook') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="{{ config('site.social.facebook') }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
                             @endif
                             @if(config('site.social.instagram'))
-                            <a href="{{ config('site.social.instagram') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="{{ config('site.social.instagram') }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
                             @endif
                             @if(config('site.social.linkedin'))
-                            <a href="{{ config('site.social.linkedin') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="{{ config('site.social.linkedin') }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-dark mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
                             @endif
                             @if(config('site.social.twitter'))
-                            <a href="{{ config('site.social.twitter') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="{{ config('site.social.twitter') }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-dark mx-2"><i class="fab fa-twitter fa-2x"></i></a>
                             @endif
                             @if(config('site.social.youtube'))
-                            <a href="{{ config('site.social.youtube') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-youtube fa-2x"></i></a>
+                                <a href="{{ config('site.social.youtube') }}" target="_blank" rel="noopener noreferrer"
+                                    class="text-dark mx-2"><i class="fab fa-youtube fa-2x"></i></a>
                             @endif
                             @if(config('site.whatsapp'))
-                            <a href="https://wa.me/91{{ config('site.whatsapp') }}" target="_blank" rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                <a href="https://wa.me/91{{ config('site.whatsapp') }}" target="_blank"
+                                    rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
                             @endif
                         </div>
 
@@ -111,20 +119,19 @@
                             enctype="multipart/form-data">
                             @csrf
                             <div class="text-center">
-                                <img class="rounded contact-logo" src="{{ asset('storage/assets/dbs.png') }}" alt="dbels-logo">
+                                <img class="rounded contact-logo" src="{{ asset('storage/assets/dcmp-logo.png') }}"
+                                    alt="dbels-logo">
                             </div>
                             <div class="mb-2 mt-1">
                                 <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
-                                <input type="name" class="form-control" id="name" placeholder="Enter name"
-                                    name="name">
+                                <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
                                 @error('name')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-2">
                                 <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email"
-                                    name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
                                 @error('email')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -140,9 +147,9 @@
                                 @enderror
                             </div>
                             <div class="mb-2">
-                                <label for="message" class="form-label">Message<span
-                                        class="text-danger">*</span></label>
-                                <textarea type="message" class="form-control" id="message" placeholder="Enter Message" name="message"> </textarea>
+                                <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
+                                <textarea type="message" class="form-control" id="message" placeholder="Enter Message"
+                                    name="message"> </textarea>
                                 @error('message')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -154,29 +161,6 @@
 
                 </div>
             </div>
-        </div>
-    </div>
-
-    {{-- Google Maps --}}
-    <div class="container pb-4" data-aos="zoom-in">
-        <h1 class="section-heading pt-4 pb-5">Find Us on Google Maps</h1>
-        <div class="shadow-lg">
-            <iframe
-                src="{{ config('site.maps_embed') }}"
-                width="100%" height="450" class="map-iframe" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="{{ config('site.name') }} Location Map">
-            </iframe>
-        </div>
-    </div>
-
-    {{-- Download Brochure Section --}}
-    <div class="container-fluid download-brochure-section">
-        <div class="container d-flex align-items-center justify-content-center p-1">
-            <span class="brochure-download-text">Download Brochure:</span>
-            <a href="{{ config('site.brochure_url') }}" class="download-button" download>
-                <i class="fas fa-download"></i> Download Now
-            </a>
         </div>
     </div>
 @endsection

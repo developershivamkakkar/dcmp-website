@@ -26,7 +26,7 @@ class FrontendPageController extends Controller
             abort(404, 'Page content not found');
         }
 
-        app(SeoService::class)->fromPage($page->title, $page->content ?? '');
+        app(SeoService::class)->fromPage($page);
 
         // Build breadcrumb: [ ['label' => 'Parent', 'href' => '#'], ['label' => 'Child', 'href' => null] ]
         $breadcrumbs = [];

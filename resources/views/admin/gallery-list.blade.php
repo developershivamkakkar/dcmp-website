@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Gallery – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage photo galleries and albums for ' . config('site.full_name'))
+@section('admin-keywords', 'gallery, photos, albums, images, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

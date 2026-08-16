@@ -1,4 +1,7 @@
 @extends('admin/layouts/app')
+@section('admin-title', 'Job Enquiries – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'View and manage job application inquiries')
+@section('admin-keywords', 'job enquiries, applications, careers, admin, management')
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">

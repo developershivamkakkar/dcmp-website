@@ -1,5 +1,9 @@
 @extends('admin/layouts/app')
 
+@section('admin-title', 'Page Editor – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Edit website pages and manage page content')
+@section('admin-keywords', 'page editor, content, pages, admin, management')
+
 @section('main')
     <div class="content-wrapper">
         <div class="content-header">
@@ -17,8 +21,8 @@
             </div>
         </div>
 
-        <section class="content h-100">
-            <div class="container-fluid h-100">
+        <section class="content">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card card-secondary">

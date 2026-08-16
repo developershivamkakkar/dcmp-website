@@ -1,4 +1,8 @@
-﻿@extends('admin.layouts.app')
+@extends('admin.layouts.app')
+
+@section('admin-title', 'Achievements – ' . config('site.name') . ' Admin Panel')
+@section('admin-description', 'Manage student and school achievements')
+@section('admin-keywords', 'achievements, awards, accomplishments, admin, management')
 
 @section('main')
 <div class="content-wrapper">
@@ -74,7 +78,7 @@
                                                          alt="{{ $a->title }}"
                                                          style="width:72px;height:54px;object-fit:cover;border-radius:4px;">
                                                 @else
-                                                    <span class="text-muted small">—</span>
+                                                    <span class="text-muted small">�</span>
                                                 @endif
                                             </td>
                                             <td>
@@ -97,14 +101,14 @@
                                                         <div><i class="fas fa-chalkboard fa-xs me-1 text-muted"></i>{{ $a->class_name }}</div>
                                                     @endif
                                                 @else
-                                                    <span class="text-muted">—</span>
+                                                    <span class="text-muted">�</span>
                                                 @endif
                                             </td>
                                             <td>
                                                 @if ($a->category)
                                                     <span class="badge bg-secondary">{{ $a->category }}</span>
                                                 @else
-                                                    <span class="text-muted small">—</span>
+                                                    <span class="text-muted small">�</span>
                                                 @endif
                                             </td>
                                             <td>
@@ -184,7 +188,7 @@
                         <div class="mb-3">
                             <label class="form-label">Category <span class="text-danger">*</span></label>
                             <select name="category" class="form-control">
-                                <option value="">— Select Category —</option>
+                                <option value="">� Select Category �</option>
                                 @foreach ($categories as $cat)
                                     <option value="{{ $cat }}" {{ old('category') == $cat ? 'selected' : '' }}>{{ $cat }}</option>
                                 @endforeach
@@ -197,7 +201,7 @@
                     <div class="mb-3">
                         <label class="form-label">Title <span class="text-danger">*</span></label>
                         <input type="text" name="title" class="form-control @error('title') is-invalid @enderror"
-                               value="{{ old('title') }}" placeholder="e.g. Gold Medal – District Science Olympiad" required>
+                               value="{{ old('title') }}" placeholder="e.g. Gold Medal � District Science Olympiad" required>
                         @error('title')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
@@ -208,7 +212,7 @@
                                   placeholder="Brief description (optional)">{{ old('description') }}</textarea>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Image <span class="text-muted small">(optional · jpg/png/webp · max 2 MB)</span></label>
+                        <label class="form-label">Image <span class="text-muted small">(optional � jpg/png/webp � max 2 MB)</span></label>
                         <input type="file" name="image" class="form-control @error('image') is-invalid @enderror"
                                accept="image/jpeg,image/png,image/webp">
                         @error('image')
