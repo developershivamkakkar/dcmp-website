@@ -24,6 +24,11 @@ class FrontendHomePageController extends Controller
         $lp = LandingSetting::allCached();
         $homeTestimonials = Testimonial::active()->orderBy('sort_order')->latest()->take(8)->get();
         $learningPartners = LearningPartner::where('status', 'active')->orderBy('display_order')->take(6)->get();
-        return view('index', compact('banners', 'explorebanners', 'menuItems', 'popups', 'blogs', 'lp', 'homeTestimonials', 'learningPartners'));
+
+        // Get dynamic URLs from settings
+        $enquiryUrl = config('site.enquiry_url');
+        $registrationUrl = config('site.registration_url');
+
+        return view('index', compact('banners', 'explorebanners', 'menuItems', 'popups', 'blogs', 'lp', 'homeTestimonials', 'learningPartners', 'enquiryUrl', 'registrationUrl'));
     }
 }

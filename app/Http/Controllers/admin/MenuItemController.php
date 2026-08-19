@@ -11,7 +11,8 @@ class MenuItemController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('permission:module-manage-menu-items', ['only' => ['index', 'store', 'update', 'destroy', 'reorder']]);
+        $this->middleware('permission:module-manage-menu-items', ['only' => ['index', 'store', 'update', 'reorder']]);
+        $this->middleware('permission:module-menu-delete', ['only' => ['destroy']]);
     }
 
     public function index()

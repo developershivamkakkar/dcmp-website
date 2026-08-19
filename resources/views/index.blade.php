@@ -205,10 +205,16 @@
                     <p class="adm-subtitle">DCM Presidency School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
 
                     <div class="d-flex flex-wrap gap-3 mt-4">
-                        <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7">
-                            <i class="fas fa-question-circle me-2"></i>Enquire Now
-                        </button>
-                        <a href="https://admissions.dassandbrownschool.com/" target="_blank" rel="noopener noreferrer" class="adm-btn-outline">
+                        @if ($enquiryUrl)
+                            <a href="{{ $enquiryUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-primary">
+                                <i class="fas fa-question-circle me-2"></i>Enquire Now
+                            </a>
+                        @else
+                            <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7">
+                                <i class="fas fa-question-circle me-2"></i>Enquire Now
+                            </button>
+                        @endif
+                        <a href="{{ $registrationUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-outline">
                             <i class="fas fa-pen me-2"></i>Register Now
                         </a>
                     </div>

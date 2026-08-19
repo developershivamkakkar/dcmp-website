@@ -68,7 +68,7 @@
                         <div class="my-2">
                             <h5 class="fw-bold">Site Office:</h5>
                             <p>{{ config('site.address.line1') }}<br>{{ config('site.address.line2') }}<br>{{ config('site.address.city') }},
-                                {{ config('site.address.state') }} – {{ config('site.address.postal') }}
+                                {{ config('site.address.state') }} – {{ config('site.address.postal_code') }}
                             </p>
                             <p><i class="fas fa-envelope me-1"></i><a href="mailto:{{ config('site.email_info') }}"
                                     class="text-reset text-decoration-none">{{ config('site.email_info') }}</a></p>

@@ -12,16 +12,19 @@ use Illuminate\Support\Str;
 /**
  * SeoService — Centralized SEO resolver.
  *
- * Three-level fallback chain (highest → lowest priority):
+ * THREE-LEVEL FALLBACK CHAIN (highest → lowest priority):
  *   1. Runtime overrides  — set via $seo->set() or fromModel() in controllers
- *   2. Per-page config    — config/seo.php keyed by route name (static pages)
- *   3. Site-wide defaults — config/site.php
+ *   2. Per-page config    — config/site.php['pages'] (keyed by route name)
+ *   3. Site-wide defaults — config/site.php (meta_description, meta_keywords)
+ *
+ * SINGLE CONFIG FILE: config/site.php
+ * All SEO data is centralized in one place for clarity and maintainability.
  *
  * Quick-start in a controller:
  *   app(SeoService::class)->fromBlog($blog);
  *   app(SeoService::class)->fromEvent($event);
  *   app(SeoService::class)->fromAlbum($album);
- *   app(SeoService::class)->fromPage($title, $content);
+ *   app(SeoService::class)->fromPage($page);
  *   app(SeoService::class)->set('title', 'Custom Title')->set('robots', 'noindex');
  *
  * The $seo variable is automatically shared with layouts/app.blade.php via
@@ -38,7 +41,7 @@ class SeoService
     public function __construct()
     {
         $routeName = request()->route()?->getName() ?? '';
-        $this->pageConfig = config("seo.{$routeName}", []);
+        $this->pageConfig = config("site.pages.{$routeName}", []);
     }
 
     // ── Fluent setter ────────────────────────────────────────────────────────
