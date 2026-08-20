@@ -822,7 +822,7 @@
     <x-brochure-modal />
 
     <x-thank-you-modal id="brochureThankYouModal" title="🎉 Thank You!" message="Your brochure request is received!"
-        download="{{ asset('brochures/dbels-brochure.pdf') }}" filename="dbels-brochure.pdf" />
+        download="#" filename="dbels-brochure.pdf" />
 
 @endsection
 

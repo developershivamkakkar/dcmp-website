@@ -216,17 +216,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="bg-white rounded-3 shadow-sm p-4">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="fw-bold mb-0" style="color:#052A56; font-size:15px;">
-                            <i class="fab fa-youtube me-2"></i>DBELS Walkthrough
+                            <i class="fab fa-youtube me-2"></i>DCMP Walkthrough
                         </h5>
-                        <a class="text-decoration-none small fw-semibold link-orange" target="_blank"
-                           href="https://www.youtube.com/@dbelschd">See more</a>
+                        {{-- <a class="text-decoration-none small fw-semibold link-orange" target="_blank"
+                           href="https://www.youtube.com/@dbelschd">See more</a> --}}
                     </div>
-                    <div class="ratio ratio-16x9 rounded overflow-hidden">
+                    {{-- <div class="ratio ratio-16x9 rounded overflow-hidden">
                         <iframe src="https://www.youtube.com/embed/OfPGCY2k9y4?si=IEd3yUQt2zrNWZfJ"
                             title="DBELS Walkthrough" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                    </div> --}}
                 </div>
 
             </div>

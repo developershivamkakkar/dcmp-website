@@ -44,7 +44,6 @@ return [
     'social' => [
         'facebook'  => 'https://www.facebook.com/DCMPresidencySchool/',
         'instagram' => 'https://www.instagram.com/dcmpresidencyschool/',
-        'linkedin'  => 'https://www.linkedin.com/company/dbelschd',
         'twitter'   => 'https://twitter.com/DCMPresidency',
         'youtube'   => 'https://www.youtube.com/@DCMPresidencySchool',
     ],

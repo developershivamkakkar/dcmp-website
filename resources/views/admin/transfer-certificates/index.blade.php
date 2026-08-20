@@ -134,7 +134,7 @@
                     <div class="mb-3">
                         <label class="form-label">Admission Number <span class="text-danger">*</span></label>
                         <input type="text" name="admission_number" class="form-control text-uppercase"
-                               value="{{ old('admission_number') }}" required placeholder="e.g. DBELS-2024-001">
+                               value="{{ old('admission_number') }}" required placeholder="e.g. DCMP-2024-001">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Student Name <span class="text-danger">*</span></label>

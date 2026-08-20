@@ -168,7 +168,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{ route('admin.dashboard') }}" class="brand-link bg-white" style="height: 57px;">
-                <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dbels Logo"
+                <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dcmp Logo"
                     class="brand-image img-circle elevation-1">
                 <span class="brand-text font-weight-dark">{{ config('site.name') }} Admin Panel</span>
             </a>

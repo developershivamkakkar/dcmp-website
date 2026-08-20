@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Events & Activities Gallery – DBELS')
+@section('title', 'Events & Activities Gallery')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
@@ -11,7 +11,7 @@
         class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i> Contact Us
     </a>
-    
+
 
     <div class="page-hero">
         <div class="page-hero-blob page-hero-blob-1"></div>

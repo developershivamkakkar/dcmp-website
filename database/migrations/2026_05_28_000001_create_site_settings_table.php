@@ -19,7 +19,7 @@ return new class extends Migration
         // Seed defaults from config/site.php so the table is usable immediately
         $defaults = [
             // General
-            'site_name'          => config('site.name',      'DBELS'),
+            'site_name'          => config('site.name',      'DCM Presidency School'),
             'site_full_name'     => config('site.full_name', ''),
             'site_tagline'       => config('site.tagline',   ''),
 
@@ -48,8 +48,8 @@ return new class extends Migration
             'google_tag_manager_id'   => config('site.google_tag_manager',  ''),
 
             // SEO
-            'meta_description'   => 'Dass & Brown Experiential Learning School (D-Bels) - Best school in Panchkula offering Cambridge, IB, and ICSE programmes.',
-            'meta_keywords'      => 'Best School in Chandigarh, Best School in Panchkula, D-BELS, Dass and Brown School, Top Schools Panchkula, ICSE School Chandigarh, Cambridge School Panchkula',
+            'meta_description'   => 'DCM Presidency School Ludhiana - Premier educational institution offering world-class education with focus on academic excellence and holistic development.',
+            'meta_keywords'      => 'DCM Presidency School, School in Ludhiana, Best School Ludhiana, CBSE School Ludhiana, Top Schools Punjab, Quality Education, Holistic Development',
 
             // Admissions
             'admissions_url'     => config('site.admissions_url', ''),
