@@ -204,17 +204,17 @@
                     <h2 class="adm-title mt-3">Give Your Child the Education They Deserve</h2>
                     <p class="adm-subtitle">DCM Presidency School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
 
-                    <div class="d-flex gap-3 mt-4" style="flex-wrap: nowrap;">
+                    <div class="d-flex gap-2 gap-md-3 mt-4 flex-wrap" style="flex-wrap: wrap !important;">
                         @if ($enquiryUrl)
-                            <a href="{{ $enquiryUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-primary flex-shrink-0">
+                            <a href="{{ $enquiryUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-primary">
                                 <i class="fas fa-question-circle me-2"></i>Enquire Now
                             </a>
                         @else
-                            <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7 flex-shrink-0">
+                            <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7">
                                 <i class="fas fa-question-circle me-2"></i>Enquire Now
                             </button>
                         @endif
-                        <a href="{{ $registrationUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-outline flex-shrink-0">
+                        <a href="{{ $registrationUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-outline">
                             <i class="fas fa-pen me-2"></i>Register Now
                         </a>
                     </div>

@@ -62,7 +62,7 @@
                     <div class="input-group">
                         <input type="text" name="admission_number" class="form-control form-control-lg text-uppercase
                                @error('admission_number') is-invalid @enderror"
-                               placeholder="Enter Admission Number (e.g. DBELS-2024-001)"
+                               placeholder="Enter Admission Number"
                                value="{{ old('admission_number', request('admission_number')) }}"
                                required>
                         <button class="btn btn-lg text-white" type="submit"

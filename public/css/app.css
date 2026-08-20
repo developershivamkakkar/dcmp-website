@@ -1057,6 +1057,21 @@ main.hero-page { padding-top: 0; }
     transform: translateY(-2px);
 }
 
+/* Responsive button sizing for mobile */
+@media (max-width: 576px) {
+    .adm-btn-primary,
+    .adm-btn-outline {
+        font-size: 12px;
+        padding: 11px 20px;
+        flex: 0 1 auto;
+    }
+
+    .d-flex.gap-2.gap-md-3 {
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+}
+
 /* Stats grid */
 .adm-stats-grid {
     display: grid;
@@ -3058,6 +3073,25 @@ main.hero-page { padding-top: 0; }
     border-color: rgba(255, 255, 255, 0.9);
     color: var(--color-text-white);
     transform: translateY(-2px);
+}
+
+/* Responsive footer CTA buttons for mobile */
+@media (max-width: 576px) {
+    .footer-cta-btn-primary,
+    .footer-cta-btn-outline {
+        font-size: 0.75rem;
+        padding: 8px 16px;
+        white-space: normal;
+    }
+
+    .footer-cta-strip .d-flex {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .footer-cta-strip .d-flex > * {
+        width: 100%;
+    }
 }
 
 /* ── Footer contact links (phone / email) ────────────────────────── */
