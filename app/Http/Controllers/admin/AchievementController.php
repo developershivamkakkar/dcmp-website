@@ -54,7 +54,7 @@ class AchievementController extends Controller
     public function delete(int $id)
     {
         // Explicit permission check
-        if (!auth()->user()->hasPermissionTo('module-achievements')) {
+        if (!auth('web')->check() || !auth('web')->user()->hasPermissionTo('module-achievements')) {
             abort(403, 'Unauthorized action.');
         }
 

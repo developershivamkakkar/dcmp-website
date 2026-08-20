@@ -47,7 +47,7 @@ class DownloadController extends Controller
     public function delete(Request $request, $id)
     {
         // Explicit permission check
-        if (!auth()->user()->hasPermissionTo('module-downloads')) {
+        if (!auth('web')->check() || !auth('web')->user()->hasPermissionTo('module-downloads')) {
             abort(403, 'Unauthorized action.');
         }
 

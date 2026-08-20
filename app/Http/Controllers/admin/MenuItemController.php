@@ -80,8 +80,8 @@ class MenuItemController extends Controller
 
     public function destroy(MenuItem $menuItem)
     {
-        // Explicit permission check
-        if (!auth()->user()->hasPermissionTo('module-menu-delete')) {
+        // Explicit permission check using Facade
+        if (!auth('web')->check() || !auth('web')->user()->hasPermissionTo('module-menu-delete')) {
             abort(403, 'Unauthorized action.');
         }
 

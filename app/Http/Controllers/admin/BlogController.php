@@ -91,7 +91,7 @@ class BlogController extends Controller
     public function delete($blog_id)
     {
         // Explicit permission check
-        if (!auth()->user()->hasPermissionTo('module-blogs')) {
+        if (!auth('web')->check() || !auth('web')->user()->hasPermissionTo('module-blogs')) {
             abort(403, 'Unauthorized action.');
         }
 

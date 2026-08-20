@@ -46,7 +46,7 @@ class GalleryController extends Controller
     public function delete(Request $request, $id)
     {
         // Explicit permission check
-        if (!auth()->user()->hasPermissionTo('module-gallery')) {
+        if (!auth('web')->check() || !auth('web')->user()->hasPermissionTo('module-gallery')) {
             abort(403, 'Unauthorized action.');
         }
 
