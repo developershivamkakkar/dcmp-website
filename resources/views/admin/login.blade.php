@@ -271,7 +271,7 @@
                 </button>
             </form>
 
-            <p class="login-footer">&copy; {{ date('Y') }} DBELS. All rights reserved.</p>
+            <p class="login-footer">&copy; {{ date('Y') }} DCMP. All rights reserved.</p>
         </div>
     </div>
 
