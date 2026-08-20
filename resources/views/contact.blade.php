@@ -7,9 +7,6 @@
 
 @section('content')
 
-
-
-
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/91{{ config('site.whatsapp') }}" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
@@ -87,29 +84,30 @@
                         </div>
                         <h5 class="mt-2 mb-2">Follow us on:</h5>
                         <div class="mt-2 mb-4">
-                            @if(config('site.social.facebook'))
+                            @if (config('site.social.facebook'))
                                 <a href="{{ config('site.social.facebook') }}" target="_blank" rel="noopener noreferrer"
                                     class="text-dark mx-2"><i class="fab fa-facebook fa-2x"></i></a>
                             @endif
-                            @if(config('site.social.instagram'))
+                            @if (config('site.social.instagram'))
                                 <a href="{{ config('site.social.instagram') }}" target="_blank" rel="noopener noreferrer"
                                     class="text-dark mx-2"><i class="fab fa-instagram fa-2x"></i></a>
                             @endif
-                            @if(config('site.social.linkedin'))
+                            @if (config('site.social.linkedin'))
                                 <a href="{{ config('site.social.linkedin') }}" target="_blank" rel="noopener noreferrer"
                                     class="text-dark mx-2"><i class="fab fa-linkedin fa-2x"></i></a>
                             @endif
-                            @if(config('site.social.twitter'))
+                            @if (config('site.social.twitter'))
                                 <a href="{{ config('site.social.twitter') }}" target="_blank" rel="noopener noreferrer"
                                     class="text-dark mx-2"><i class="fab fa-twitter fa-2x"></i></a>
                             @endif
-                            @if(config('site.social.youtube'))
+                            @if (config('site.social.youtube'))
                                 <a href="{{ config('site.social.youtube') }}" target="_blank" rel="noopener noreferrer"
                                     class="text-dark mx-2"><i class="fab fa-youtube fa-2x"></i></a>
                             @endif
-                            @if(config('site.whatsapp'))
+                            @if (config('site.whatsapp'))
                                 <a href="https://wa.me/91{{ config('site.whatsapp') }}" target="_blank"
-                                    rel="noopener noreferrer" class="text-dark mx-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+                                    rel="noopener noreferrer" class="text-dark mx-2"><i
+                                        class="fab fa-whatsapp fa-2x"></i></a>
                             @endif
                         </div>
 
@@ -124,14 +122,16 @@
                             </div>
                             <div class="mb-2 mt-1">
                                 <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
-                                <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                                <input type="name" class="form-control" id="name" placeholder="Enter name"
+                                    name="name">
                                 @error('name')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="mb-2">
                                 <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                    name="email">
                                 @error('email')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror
@@ -147,9 +147,9 @@
                                 @enderror
                             </div>
                             <div class="mb-2">
-                                <label for="message" class="form-label">Message<span class="text-danger">*</span></label>
-                                <textarea type="message" class="form-control" id="message" placeholder="Enter Message"
-                                    name="message"> </textarea>
+                                <label for="message" class="form-label">Message<span
+                                        class="text-danger">*</span></label>
+                                <textarea type="message" class="form-control" id="message" placeholder="Enter Message" name="message"> </textarea>
                                 @error('message')
                                     <div class="text-danger">{{ $message }}</div>
                                 @enderror

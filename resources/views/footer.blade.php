@@ -105,12 +105,25 @@
                 <h6 class="footer-heading">Quick Links</h6>
                 <ul class="footer-links">
                     <li><a href="{{ route('home.get') }}"><i class="fas fa-chevron-right"></i>Home</a></li>
-                    <li><a href="{{ url('/about/into-the-sands-of-time') }}"><i class="fas fa-chevron-right"></i>About {{ config('site.name') }}</a></li>
-                    <li><a href="{{ url('/about/our-mission') }}"><i class="fas fa-chevron-right"></i>Our Mission</a></li>
-                    <li><a href="{{ url('/about/vision-dbs') }}"><i class="fas fa-chevron-right"></i>Vision DBS</a></li>
-                    <li><a href="{{ url('/about/principal-message') }}"><i class="fas fa-chevron-right"></i>Principal's Message</a></li>
-                    <li><a href="{{ url('/about/school-rules') }}"><i class="fas fa-chevron-right"></i>School Rules</a></li>
-                    <li><a href="{{ url('/faq') }}"><i class="fas fa-chevron-right"></i>FAQs</a></li>
+                    @php
+                        $aboutMenu = \App\Models\MenuItem::where('name', 'About')->first();
+                        if($aboutMenu) {
+                            $aboutChildren = $aboutMenu->children()->orderBy('display_order')->where('status', 'active')->whereNotNull('url')->get();
+                        }
+                    @endphp
+                    @if($aboutMenu)
+                        @foreach($aboutChildren as $child)
+                            <li><a href="{{ $child->href }}"><i class="fas fa-chevron-right"></i>{{ $child->name }}</a></li>
+                        @endforeach
+                    @endif
+                    @php
+                        $faqMenu = \App\Models\MenuItem::where('url', 'faq')->orWhere('name', 'FAQ')->orWhere('name', 'FAQs')->first();
+                    @endphp
+                    @if($faqMenu && $faqMenu->url)
+                        <li><a href="{{ $faqMenu->href }}"><i class="fas fa-chevron-right"></i>{{ $faqMenu->name }}</a></li>
+                    @else
+                        <li><a href="{{ route('faq.get') }}"><i class="fas fa-chevron-right"></i>FAQs</a></li>
+                    @endif
                     <li><a href="{{ route('blogs.get') }}"><i class="fas fa-chevron-right"></i>Blogs</a></li>
                     <li><a href="{{ route('job-form.get') }}"><i class="fas fa-chevron-right"></i>Careers</a></li>
                     <li><a href="{{ route('downloads-list.get') }}"><i class="fas fa-chevron-right"></i>Downloads</a></li>
@@ -129,10 +142,17 @@
 
                 <h6 class="footer-heading">Academics</h6>
                 <ul class="footer-links">
-                    <li><a href="{{ url('/academics/academic-overview') }}"><i class="fas fa-chevron-right"></i>Academic Overview</a></li>
-                    <li><a href="{{ url('/academics/capacity-building-programs') }}"><i class="fas fa-chevron-right"></i>Capacity Building Programs</a></li>
-                    <li><a href="{{ url('/academics/enrollment-details') }}"><i class="fas fa-chevron-right"></i>Enrollment Details</a></li>
-                    <li><a href="{{ route('resource-list') }}"><i class="fas fa-chevron-right"></i>Resource List</a></li>
+                    @php
+                        $academicsMenu = \App\Models\MenuItem::where('name', 'Academics')->first();
+                        if($academicsMenu) {
+                            $academicsChildren = $academicsMenu->children()->orderBy('display_order')->where('status', 'active')->whereNotNull('url')->where('name', '!=', 'Resource List')->get();
+                        }
+                    @endphp
+                    @if($academicsMenu)
+                        @foreach($academicsChildren as $child)
+                            <li><a href="{{ $child->href }}"><i class="fas fa-chevron-right"></i>{{ $child->name }}</a></li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
 
