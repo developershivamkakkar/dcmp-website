@@ -1,14 +1,14 @@
 @extends('layouts.app')
-@section('title', 'DBS-RESOURCE-LIST')
+@section('title', 'DCMP-RESOURCE-LIST')
 @section('content')
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/6284058009" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/9115800214" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
         Contact Us
     </a>
 
-    
+
 
     {{-- Page Hero Banner --}}
     <div class="page-hero">
