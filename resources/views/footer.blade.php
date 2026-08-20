@@ -15,12 +15,12 @@
                     <h5 class="footer-cta-title mb-1">Ready to Join {{ config('site.name') }}?</h5>
                     <p class="footer-cta-subtitle mb-0">Book a campus visit and experience the DCMP difference.</p>
                 </div>
-                <div class="d-flex gap-2 flex-wrap justify-content-center">
+                <div class="d-flex gap-2 justify-content-center" style="flex-wrap: nowrap;">
                     <a href="{{ config('site.admissions_url') }}" target="_blank" rel="noopener noreferrer"
-                       class="btn footer-cta-btn-primary">
+                       class="btn footer-cta-btn-primary flex-shrink-0">
                         <i class="fas fa-pen-to-square me-2"></i>Apply Now
                     </a>
-                    <a href="{{ route('contact') }}" class="btn footer-cta-btn-outline">
+                    <a href="{{ route('contact') }}" class="btn footer-cta-btn-outline flex-shrink-0">
                         <i class="fas fa-phone-alt me-2"></i>Contact Us
                     </a>
                 </div>

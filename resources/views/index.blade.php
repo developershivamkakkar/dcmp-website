@@ -204,17 +204,17 @@
                     <h2 class="adm-title mt-3">Give Your Child the Education They Deserve</h2>
                     <p class="adm-subtitle">DCM Presidency School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
 
-                    <div class="d-flex flex-wrap gap-3 mt-4">
+                    <div class="d-flex gap-3 mt-4" style="flex-wrap: nowrap;">
                         @if ($enquiryUrl)
-                            <a href="{{ $enquiryUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-primary">
+                            <a href="{{ $enquiryUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-primary flex-shrink-0">
                                 <i class="fas fa-question-circle me-2"></i>Enquire Now
                             </a>
                         @else
-                            <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7">
+                            <button class="adm-btn-primary npfWidgetButton npfWidget-cbdb663e4ed49cb2c31d9bd90e87b6c7 flex-shrink-0">
                                 <i class="fas fa-question-circle me-2"></i>Enquire Now
                             </button>
                         @endif
-                        <a href="{{ $registrationUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-outline">
+                        <a href="{{ $registrationUrl }}" target="_blank" rel="noopener noreferrer" class="adm-btn-outline flex-shrink-0">
                             <i class="fas fa-pen me-2"></i>Register Now
                         </a>
                     </div>
@@ -352,7 +352,7 @@
                                 <img src="{{ asset('storage/assets/facilities-images/blogs.png') }}" alt="blog" loading="lazy">
                             </div>
                             <h3 class="hlt-card-title">Blogs</h3>
-                            <p class="hlt-card-desc">Insights, stories and the latest news from the DBS community.</p>
+                            <p class="hlt-card-desc">Insights, stories and the latest news from the DCMP community.</p>
                             <span class="hlt-card-cta">Read Blogs <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </a>
@@ -506,7 +506,7 @@
             <div class="text-center mb-5" data-aos="fade-down">
                 <h2 class="fw-bold display-4 p-2 activity-heading">Real Learning in Action</h2>
                 <p class="text-muted fs-5">A glimpse of engaging moments inside and outside the classroom at
-                    <strong>DBS</strong>
+                    <strong>DCMP</strong>
                 </p>
             </div>
 
@@ -822,7 +822,7 @@
     <x-brochure-modal />
 
     <x-thank-you-modal id="brochureThankYouModal" title="🎉 Thank You!" message="Your brochure request is received!"
-        download="#" filename="dbels-brochure.pdf" />
+        download="#" filename="" />
 
 @endsection
 
