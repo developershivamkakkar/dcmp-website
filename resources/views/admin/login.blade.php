@@ -214,7 +214,7 @@
 
             <div class="logo-wrap">
                 <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="DBELS Logo">
-                <h1>DBS Admin</h1>
+                <h1>DCMP Admin</h1>
                 <p>Sign in to your account</p>
             </div>
 
