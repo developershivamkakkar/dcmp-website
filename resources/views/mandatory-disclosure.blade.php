@@ -1,20 +1,11 @@
 @extends('layouts.app')
-@section('title', 'Mandatory Disclosure � DBS')
+@section('title', 'Mandatory Disclosure DCMP')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
 @endsection
 
 @section('content')
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://api.whatsapp.com/send/?phone=9115992924&text=Hello%20Dass%20and%20Brown%20Experiential%20Learning%20School&type=phone_number&app_absent=0"
-        class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i> Contact Us
-    </a>
-
-    
-
     {{-- Page Hero Banner --}}
     <div class="page-hero">
         <div class="page-hero-blob page-hero-blob-1"></div>

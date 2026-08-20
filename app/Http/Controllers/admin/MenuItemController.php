@@ -80,6 +80,11 @@ class MenuItemController extends Controller
 
     public function destroy(MenuItem $menuItem)
     {
+        // Explicit permission check
+        if (!auth()->user()->hasPermissionTo('module-menu-delete')) {
+            abort(403, 'Unauthorized action.');
+        }
+
         // Promote children to top-level before deleting
         MenuItem::where('parent_id', $menuItem->id)->update(['parent_id' => $menuItem->parent_id]);
         $menuItem->delete();

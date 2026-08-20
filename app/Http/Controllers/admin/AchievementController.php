@@ -53,6 +53,11 @@ class AchievementController extends Controller
 
     public function delete(int $id)
     {
+        // Explicit permission check
+        if (!auth()->user()->hasPermissionTo('module-achievements')) {
+            abort(403, 'Unauthorized action.');
+        }
+
         $achievement = Achievement::findOrFail($id);
 
         if ($achievement->image_path) {

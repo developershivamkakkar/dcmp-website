@@ -26,7 +26,7 @@ class DownloadController extends Controller
         return view('admin.downloads.index', compact('downloads'));
     }
 
-    // Function to create a Download  and store it in the database 
+    // Function to create a Download  and store it in the database
     public function store(Request $request)
     {
         // Validate Incoming Request
@@ -35,7 +35,7 @@ class DownloadController extends Controller
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         }
-        // Upload Image 
+        // Upload Image
         $data = $this->upload_file($request);
 
         Download::create($data);
@@ -46,6 +46,11 @@ class DownloadController extends Controller
 
     public function delete(Request $request, $id)
     {
+        // Explicit permission check
+        if (!auth()->user()->hasPermissionTo('module-downloads')) {
+            abort(403, 'Unauthorized action.');
+        }
+
         try {
             // Find the download to delete
             $deleted_download = Download::findOrFail($id);

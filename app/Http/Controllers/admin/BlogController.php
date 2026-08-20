@@ -53,7 +53,7 @@ class BlogController extends Controller
         return view('admin.blogs.edit-blog', compact('blog'));
     }
 
-    // Function to Update a Blog 
+    // Function to Update a Blog
     public function update(Request $request, $blog_id)
     {
         // Validate the request data
@@ -87,9 +87,14 @@ class BlogController extends Controller
         }
     }
 
-    // Function to delete a Blog 
+    // Function to delete a Blog
     public function delete($blog_id)
     {
+        // Explicit permission check
+        if (!auth()->user()->hasPermissionTo('module-blogs')) {
+            abort(403, 'Unauthorized action.');
+        }
+
         try {
             $blog = Blog::findOrFail($blog_id);
             $blog_image_path = $blog->blog_image_path;
@@ -130,7 +135,7 @@ class BlogController extends Controller
         return $validator;
 
     }
-    // Function to  Upload a Image 
+    // Function to  Upload a Image
     protected function upload_image(Request $request)
     {
         $data = $request->all();

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Activities Gallery – DBELS')
+@section('title', 'Events & Activities Gallery')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">

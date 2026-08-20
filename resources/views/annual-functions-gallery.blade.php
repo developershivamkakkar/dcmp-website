@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Annual Functions Gallery – DBELS')
+@section('title', 'Annual Functions Gallery')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/pages/show.css') }}">
