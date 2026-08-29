@@ -47,7 +47,7 @@
 <div class="container d-none d-lg-flex pt-3 pb-1 header-info-row">
     <div class="row w-100">
         <div class="col-lg-4">
-            <a href="/"><img class="img-fluid p-2" src="{{ asset(config('site.logo')) }}"
+            <a href="/"><img class="img-fluid p-1 h-20" src="{{ asset(config('site.logo')) }}"
                     alt="{{ config('site.name') }}" /></a>
         </div>
         <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">

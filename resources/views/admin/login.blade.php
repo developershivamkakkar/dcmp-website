@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Login DCMP</title>
+    <title>Admin Login DCMI</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="{{ asset('admin_assets/assets/plugins/fontawesome-free/css/all.min.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('storage/assets/dbs.ico') }}">
@@ -213,7 +213,7 @@
         <div class="login-card">
 
             <div class="logo-wrap">
-                <img src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="DBELS Logo">
+                <img src="{{ asset('storage/assets/dcm-logo.jpg') }}" alt="DCMI Logo">
                 <h1>DCMP Admin</h1>
                 <p>Sign in to your account</p>
             </div>
@@ -271,7 +271,7 @@
                 </button>
             </form>
 
-            <p class="login-footer">&copy; {{ date('Y') }} DCMP. All rights reserved.</p>
+            <p class="login-footer">&copy; {{ date('Y') }} DCMI. All rights reserved.</p>
         </div>
     </div>
 

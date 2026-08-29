@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'DCM Presidency School (DCMP) - Best School in Ludhiana')
+@section('title', 'DCM International School (DCMI) - Best School in Ferozepur')
 
 @section('meta-description',
     '')
@@ -200,9 +200,9 @@
 
                 {{-- Left: text + buttons --}}
                 <div class="col-lg-7 text-white" data-aos="fade-right">
-                    <span class="adm-badge"><i class="fas fa-star me-1"></i> Admissions Open 2026–27</span>
+                    <span class="adm-badge"><i class="fas fa-star me-1"></i> Admissions Open 2027-28</span>
                     <h2 class="adm-title mt-3">Give Your Child the Education They Deserve</h2>
-                    <p class="adm-subtitle">DCM Presidency School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
+                    <p class="adm-subtitle">DCM International School is now accepting applications. Secure your child's future with Digitally Networked Smart School With Cutting Edge Technology</p>
 
                     <div class="d-flex gap-2 gap-md-3 mt-4 flex-wrap" style="flex-wrap: wrap !important;">
                         @if ($enquiryUrl)
@@ -262,20 +262,19 @@
                     <div class="row">
                         <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
                             <img loading="lazy" class="pb-md-4 pb-sm-4 pb-4 explore-logo"
-                                src="{{ asset('storage/assets/dcmp-logo.png') }}" alt="dcmp-logo">
+                                src="{{ asset('storage/assets/dcm-logo.jpg') }}" alt="dcmp-logo">
                         </div>
                         <div class="col-9 col-sm-9 col-md-9 col-lg-9" data-aos="fade-up" data-aos-delay="400">
                             <h2 class="explore-potential-heading mb-4">
-                                DIGITALLY NETWORKED SMART SCHOOL
-                                <span class="fw-bold explore-text">WITH CUTTING EDGE TECHNOLOGY</span>
+                                EMPOWERING FUTURE-READY LEARNERS THROUGH EXCELLENCE
+                                <span class="fw-bold explore-text">INNOVATION & HOLISTIC EDUCATION</span>
                             </h2>
                         </div>
                     </div>
                     <p class="explore-potential-text" data-aos="fade-up" data-aos-delay="500">
-                        Located in the serene environment of Panchkula, (Tri City) , <br> Dass & Brown Experiential Learning
-                        School is designed to cultivate competent & conscientious individuals who can think ahead of their
-                        times. Dbels is designed with modern architecture & is going to be the first of its kind, centrally
-                        air-conditioned, state-of-the-art, Wi-Fi enabled, digitally equipped campus.
+                       DCM International School carries forward the progressive educational legacy of the DCM Group of Schools. With a strong focus on academic excellence, innovation and holistic development, the school provides students with opportunities to learn, explore, create and lead.
+The school aims to nurture confident, responsible and future-ready learners equipped with the skills and values needed to thrive in a rapidly changing world.
+
                     </p>
                 </div>
                 <div class="col-lg-6 h-100 shadow-sm p-1" data-aos="fade-left" data-aos-delay="600">
@@ -326,7 +325,7 @@
             <div class="row text-center mb-5">
                 <div class="col">
                     <span class="hlt-eyebrow">Quick Access</span>
-                    <h2 class="section-title mt-2">Explore More with DCMP</h2>
+                    <h2 class="section-title mt-2">Explore More with DCMI</h2>
                     <p class="text-light opacity-75">Everything you need, just a click away</p>
                 </div>
             </div>
@@ -396,9 +395,7 @@
             <div class="text-center mb-5">
                 <h2 class="fw-bold" data-aos="zoom-in">What Sets Us Apart</h2>
                 <p class="text-muted mt-2" data-aos="fade-up" data-aos-delay="150">
-                    A Future-Ready Learning Ecosystem Built on Excellence, Innovation & Global Exposure
-                </p>
-            </div>
+A Future-Ready Learning Ecosystem Built on Excellence, Innovation & Holistic Development            </div>
 
             <!-- MAIN ROW -->
             <div class="row g-4">
@@ -409,37 +406,32 @@
 
                         <div class="d-flex" data-aos="fade-right">
                             <i class="fas fa-book-open text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">CBSE NEP experiential learning compliant school</p>
+                            <p class="mb-0 text-muted">CBSE Curriculum with a Strong Focus on Conceptual & Experiential Learning</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="100">
                             <i class="fas fa-school text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">World-Class Smart Campus with Advanced Infrastructure</p>
+                            <p class="mb-0 text-muted">MORIC Math Lab for Experiential & Activity-Based Mathematical Learning</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="200">
                             <i class="fas fa-laptop-code text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Microsoft Showcase School with AI-Driven Learning</p>
+                            <p class="mb-0 text-muted">Smart Classrooms & Technology-Integrated Teaching-Learning</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="300">
                             <i class="fas fa-flask text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Experiential, Research-Based & Flipped Learning Pedagogies</p>
+                            <p class="mb-0 text-muted">Career Counselling & Pathway Guidance from Middle School Onwards</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="400">
                             <i class="fas fa-robot text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Highly Awarded ATL, Robotics & STEAM Programs</p>
+                            <p class="mb-0 text-muted">CAP – Career Awareness & Progression for Informed Academic Choices</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-right" data-aos-delay="500">
                             <i class="fas fa-user-tie text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Strong Focus on Communication, Leadership & Personality Development</p>
-                        </div>
-
-                        <div class="d-flex" data-aos="fade-right" data-aos-delay="600">
-                            <i class="fas fa-trophy text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Outstanding Academic Excellence & Competitive Exam Preparation</p>
+                            <p class="mb-0 text-muted">Exposure to Emerging Careers, Competitive Examinations & Future Opportunities</p>
                         </div>
 
                     </div>
@@ -457,37 +449,32 @@
 
                         <div class="d-flex" data-aos="fade-left">
                             <i class="fas fa-rocket text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">International Exposure through tie-ups with Universities Abroad</p>
+                            <p class="mb-0 text-muted">Sky Observatory for Astronomy, Scientific Curiosity & Exploration</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="100">
                             <i class="fas fa-swimming-pool text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Elite Sport Facilities including outdoor and indoor arenas</p>
+                            <p class="mb-0 text-muted">NCC for Discipline, Leadership, Teamwork & Responsible Citizenship.</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="200">
                             <i class="fas fa-palette text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Holistic Development through Arts, Culture & Innovation</p>
+                            <p class="mb-0 text-muted">Strong Focus on Communication, Confidence & Leadership Development</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="300">
                             <i class="fas fa-heart text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Certified Wellness Support with Counsellors & Mentors</p>
+                            <p class="mb-0 text-muted">A Rich Platform for Creative Arts, Performing Arts & Cultural Expression</p>
                         </div>
 
                         <div class="d-flex" data-aos="fade-left" data-aos-delay="400">
                             <i class="fas fa-compass text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Career Guidance & Study Abroad Support from Middle School onwards</p>
+                            <p class="mb-0 text-muted">A Holistic Ecosystem for Academic Excellence, Innovation, Sports & Life Skills</p>
                         </div>
 
-                        <div class="d-flex" data-aos="fade-left" data-aos-delay="500">
-                            <i class="fas fa-shield-alt text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Safe, Secure & Student-Centric Environment with 24×7 CCTV</p>
-                        </div>
-
-                        <div class="d-flex" data-aos="fade-left" data-aos-delay="600">
-                            <i class="fas fa-award text-danger fs-4 me-3"></i>
-                            <p class="mb-0 text-muted">Nationally Recognized with Multiple Awards & Rankings</p>
+                          <div class="d-flex" data-aos="fade-right" data-aos-delay="600">
+                            <i class="fas fa-trophy text-danger fs-4 me-3"></i>
+                            <p class="mb-0 text-muted">Spike Sports & Extensive Opportunities for Sporting Excellence</p>
                         </div>
 
                     </div>
@@ -506,7 +493,7 @@
             <div class="text-center mb-5" data-aos="fade-down">
                 <h2 class="fw-bold display-4 p-2 activity-heading">Real Learning in Action</h2>
                 <p class="text-muted fs-5">A glimpse of engaging moments inside and outside the classroom at
-                    <strong>DCMP</strong>
+                    <strong>DCMI</strong>
                 </p>
             </div>
 
@@ -549,7 +536,7 @@
             {{-- Section header --}}
             <div class="text-center mb-5">
                 <span class="hlt-eyebrow" data-aos="fade-down">World-Class Infrastructure</span>
-                <h2 class="cool-heading mt-2" data-aos="zoom-in">Facilities @ DCMP</h2>
+                <h2 class="cool-heading mt-2" data-aos="zoom-in">Facilities @ DCMI</h2>
                 <p class="fac-section-desc text-muted mt-3 mx-auto" data-aos="fade-up" data-aos-delay="100">
                     A masterpiece of modern design — centrally air-conditioned, Wi-Fi enabled and fully digitally
                     equipped with cutting-edge science, innovation labs and elite sports facilities.

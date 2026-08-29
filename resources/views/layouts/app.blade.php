@@ -58,6 +58,15 @@
     {{-- App CSS --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+    {{-- Dynamic Theme Colors (from config/site.php) --}}
+    <style>
+        :root {
+            --brand-maroon: {{ config('site.color_primary') }};
+            --brand-golden: {{ config('site.color_secondary') }};
+            --brand-purple: {{ config('site.color_accent') }};
+        }
+    </style>
+
     {{-- AOS CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -102,7 +111,7 @@
 
     @include('footer')
 
-    {{-- FontAwesome (deferred — does not block rendering) --}}
+    {{-- FontAwesome (deferred ï¿½ does not block rendering) --}}
     <script src="https://kit.fontawesome.com/ce31a4dd61.js" crossorigin="anonymous" defer></script>
 
     {{-- Bootstrap JS --}}

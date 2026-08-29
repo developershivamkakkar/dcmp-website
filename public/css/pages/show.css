@@ -5,7 +5,7 @@
 /* ══ Page Hero ════════════════════════════════════════════════════ */
 .page-hero {
     position: relative;
-    background: linear-gradient(135deg, #031D3D 0%, #052A56 45%, #00A859 100%);
+    background: linear-gradient(135deg, #000052 0%, #010080 45%, #BFA2CA 100%);
     padding: 72px 20px 90px;
     text-align: center;
     overflow: hidden;
@@ -46,7 +46,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.9rem, 4.5vw, 3rem);
     font-weight: 800;
-    color: #ffffff;
+    color: var(--color-text-white);
     margin-bottom: 16px;
     letter-spacing: -0.5px;
     text-shadow: 0 2px 12px rgba(0,0,0,0.25);
@@ -70,8 +70,8 @@
     text-decoration: none;
     transition: color .2s;
 }
-.page-hero .breadcrumb-item a:hover  { color: #00A859; }
-.page-hero .breadcrumb-item.active   { color: #00A859; font-weight: 600; }
+.page-hero .breadcrumb-item a:hover  { color: var(--brand-purple); }
+.page-hero .breadcrumb-item.active   { color: var(--brand-purple); font-weight: 600; }
 .page-hero .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,0.45); }
 
 /* Wave divider */
@@ -93,21 +93,21 @@
 
 /* ══ Content card ═════════════════════════════════════════════════ */
 .page-content-card {
-    background: #ffffff;
+    background: var(--color-bg-white);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 40px rgba(0,0,0,0.09), 0 1px 4px rgba(0,0,0,0.05);
     font-family: 'Poppins', sans-serif;
     font-size: 15.5px;
     line-height: 1.85;
-    color: #333;
+    color: var(--color-text-body);
     word-wrap: break-word;
 }
 
 /* Animated gradient accent bar */
 .page-content-accent-bar {
     height: 5px;
-    background: linear-gradient(90deg, #E31E25, #00A859, #E31E25);
+    background: linear-gradient(90deg, #E31E25, var(--brand-purple), #E31E25);
     background-size: 200% 100%;
     animation: accentSlide 4s linear infinite;
 }
@@ -134,7 +134,7 @@
 .page-content-body h5,
 .page-content-body h6 {
     font-family: 'Raleway', sans-serif;
-    color: #052A56;
+    color: #010080;
     margin-top: 1.8rem;
     margin-bottom: 0.8rem;
     font-weight: 700;
@@ -142,7 +142,7 @@
 }
 .page-content-body h2 {
     font-size: clamp(1.3rem, 3vw, 1.65rem);
-    border-left: 4px solid #00A859;
+    border-left: 4px solid var(--brand-purple);
     padding-left: 14px;
 }
 .page-content-body h3 {
@@ -175,11 +175,11 @@
 .page-content-body li { margin-bottom: 0.45rem; }
 
 .page-content-body blockquote {
-    border-left: 4px solid #00A859;
+    border-left: 4px solid var(--brand-purple);
     padding: 14px 22px;
     background: rgba(255,255,255,0.12);
     border-radius: 0 10px 10px 0;
-    color: #555;
+    color: var(--color-text-muted);
     margin: 1.8rem 0;
     font-style: italic;
     box-shadow: inset 0 0 0 1px rgba(0, 168, 89, 0.25);
@@ -232,7 +232,7 @@
 .page-content-body table th,
 .page-content-body figure.table table th {
     background-color: var(--color-primary, #E31E25) !important;
-    color: #ffffff !important;
+    color: var(--color-text-white) !important;
     font-weight: 600;
     padding: 13px 16px;
     text-align: left;
@@ -242,7 +242,7 @@
 .page-content-body table th span,
 .page-content-body figure.table table th p,
 .page-content-body figure.table table th span {
-    color: #ffffff !important;
+    color: var(--color-text-white) !important;
     margin-bottom: 0;
 }
 .page-content-body table td {
@@ -256,4 +256,4 @@
 /* ══ Figures / Captions ════════════════════════════════════════════ */
 .page-content-body figure:not(.table) { margin: 1.5rem auto; text-align: center; }
 .page-content-body figure.table       { margin: 1.5rem 0; text-align: left; }
-.page-content-body figure figcaption  { font-size: 13px; color: #888; margin-top: 6px; font-style: italic; }
+.page-content-body figure figcaption  { font-size: 13px; color: var(--color-text-muted); margin-top: 6px; font-style: italic; }
