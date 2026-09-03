@@ -20,9 +20,9 @@ return [
 
     // -- Assets (relative to public/) -----------------------------------------
     'logo'          => 'storage/assets/dcmi-main-logo.png',
-    'logo_icon'     => 'storage/assets/dcmp-logo.png',
-    'favicon'       => 'storage/assets/dcmp-logo.png',
-    'og_image'      => 'storage/assets/dcmp-logo.png',
+    'logo_icon'     => 'storage/assets/dcmi-main-logo.png',
+    'favicon'       => 'storage/assets/dcmi-main-logo.png',
+    'og_image'      => 'storage/assets/dcmi-main-logo.png',
 
     // -- Contact ---------------------------------------------------------------
     'address' => [
