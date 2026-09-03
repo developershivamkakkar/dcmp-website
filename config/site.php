@@ -37,7 +37,7 @@ return [
 
     'phone'            => '01632-229797',
     'email_admissions' => 'dcmodelinternational2003@gmail.com',
-    'email_info'       => 'dcmodelinternational2003@gmail.com',
+    'email_info'       => 'info@dcminternationalschool.org',
     'whatsapp'         => '+9115992917',
 
     // -- Social Media ----------------------------------------------------------
