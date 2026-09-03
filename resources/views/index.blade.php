@@ -546,21 +546,21 @@ A Future-Ready Learning Ecosystem Built on Excellence, Innovation & Holistic Dev
             {{-- Facility tiles --}}
             @php
                 $facilities = [
-                    ['src' => 'AI AND IT LAB ICON.png',               'alt' => 'AI Innovation Hub'],
-                    ['src' => 'alt and robotic icon.png',            'alt' => 'ATL & Robotics Labs'],
-                    ['src' => 'adv lab icon.png',                    'alt' => 'Advance Laboratories'],
-                    ['src' => 'smart classes.png',                   'alt' => 'Smart Classrooms'],
-                    ['src' => 'hi tech math lab icon.png',           'alt' => 'Smart Digital Board'],
-                    ['src' => 'Hi Tech Campus Icon.png',             'alt' => 'Hi-Tech Campus'],
-                    ['src' => 'lrc icon.png',                        'alt' => 'Habitat Centre'],
-                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Swimming Pool'],
-                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Milkha Singh Stadium'],
-                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Astroturf Courts'],
-                    ['src' => 'Indoor and Outdoor Sports Icon.png',  'alt' => 'Indoor Sports Arena'],
-                    ['src' => 'ncc icon.png',                        'alt' => 'Rifle Shooting Range'],
-                    ['src' => 'auditorium icon.png',                 'alt' => 'Open Air Theatre'],
-                    ['src' => 'care centre icon.png',                'alt' => 'Wellness & Counselling'],
-                    ['src' => '24x7 cctv icon.png',                  'alt' => '24×7 CCTV Security'],
+                    ['src' => '01.png',  'alt' => 'AI Innovation Hub'],
+                    ['src' => '02.png',  'alt' => 'ATL & Robotics Labs'],
+                    ['src' => '03.png',  'alt' => 'Advance Laboratories'],
+                    ['src' => '04.png',  'alt' => 'Smart Classrooms'],
+                    ['src' => '05.png',  'alt' => 'Smart Digital Board'],
+                    ['src' => '06.png',  'alt' => 'Hi-Tech Campus'],
+                    ['src' => '07.png',  'alt' => 'Habitat Centre'],
+                    ['src' => '08.png',  'alt' => 'Swimming Pool'],
+                    ['src' => '09.png',  'alt' => 'Milkha Singh Stadium'],
+                    ['src' => '10.png',  'alt' => 'Astroturf Courts'],
+                    ['src' => '11.png',  'alt' => 'Indoor Sports Arena'],
+                    ['src' => '12.png',  'alt' => 'Rifle Shooting Range'],
+                    ['src' => '13.png',  'alt' => 'Open Air Theatre'],
+                    ['src' => '14.png',  'alt' => 'Wellness & Counselling'],
+                    ['src' => '15.png',  'alt' => '24×7 CCTV Security'],
                 ];
             @endphp
             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center">
@@ -573,7 +573,6 @@ A Future-Ready Learning Ecosystem Built on Excellence, Innovation & Holistic Dev
                                     alt="{{ $facility['alt'] }}"
                                     onerror="this.style.display='none'">
                             </div>
-                            <p class="fac-tile-label mb-0 fw-500" style="font-size: 0.85rem; color: #333;">{{ $facility['alt'] }}</p>
                         </div>
                     </div>
                 @endforeach

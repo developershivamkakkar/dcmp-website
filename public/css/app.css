@@ -41,14 +41,14 @@
    ===================================================================== */
 :root {
     --brand-maroon: #010080;   /* 1. Main  — dominant brand colour    */
-    --brand-golden: #D9DADA;   /* 2. Secondary  — accent / highlights      */
-    --brand-purple: #BFA2CA;   /* 3. Tertiary  — additional accent    */
+    --brand-golden: #BFA27A;   /* 2. Secondary  — accent / highlights      */
+    --brand-purple: #D8DAD9;   /* 3. Tertiary  — additional accent    */
     /* ── Derived tokens — DO NOT edit below this line ─────────────── */
 
     /* Primary = Main Blue (dominant colour — navs, bars, footer) */
     --color-primary:        var(--brand-maroon);
     --color-primary-dark:   #000052;
-    --color-primary-light:  #E6D9F0;
+    --color-primary-light:  #D8DAD9;
     --color-primary-hover:  #D9CCEA;
     --color-primary-border: #C9B5D9;
 
