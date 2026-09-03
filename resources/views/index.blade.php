@@ -561,6 +561,13 @@ A Future-Ready Learning Ecosystem Built on Excellence, Innovation & Holistic Dev
                     ['src' => '13.png',  'alt' => 'Open Air Theatre'],
                     ['src' => '14.png',  'alt' => 'Wellness & Counselling'],
                     ['src' => '15.png',  'alt' => '24×7 CCTV Security'],
+                    ['src' => '16.png',  'alt' => 'Facility'],
+                    ['src' => '17.png',  'alt' => 'Facility'],
+                    ['src' => '18.png',  'alt' => 'Facility'],
+                    ['src' => '19.png',  'alt' => 'Facility'],
+                    ['src' => '20.png',  'alt' => 'Facility'],
+                    ['src' => '21.png',  'alt' => 'Facility'],
+                    ['src' => '22.png',  'alt' => 'Facility'],
                 ];
             @endphp
             <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center">
