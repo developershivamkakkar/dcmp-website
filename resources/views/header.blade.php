@@ -53,8 +53,8 @@
         <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
             <i class="fa fa-address-book mb-1"></i>
             <span class="desktop-icons-below-text text-center">
-                {{ config('site.address.line2') }}<br>
-                {{ config('site.address.city') }}, {{ config('site.address.state') }}</span>
+                {{ config('site.address.line1') }}<br>
+                {{ config('site.address.line2') }}</span>
         </div>
         <div class="col-lg-2 d-flex justify-content-center align-items-center flex-column">
             <i class="fa fa-envelope mb-1"></i>
